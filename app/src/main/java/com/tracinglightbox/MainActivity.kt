@@ -40,6 +40,7 @@ private const val PALM_MM = 20f
 private const val CONFIRM_W_DP = 320f
 private const val CONFIRM_H_DP = 120f
 private const val TICK_MS = 50L
+private const val TAP_SLOP_DP = 24f
 
 class MainActivity : ComponentActivity() {
 
@@ -125,6 +126,7 @@ class MainActivity : ComponentActivity() {
             zoneSizePx = dp(ZONE_DP),
             maxTouchMajorPx = PALM_MM / 25.4f * dm.xdpi,
             confirmButton = button,
+            tapSlopPx = dp(TAP_SLOP_DP),
         )
         if (config != detectorConfig || detector == null) {
             detectorConfig = config

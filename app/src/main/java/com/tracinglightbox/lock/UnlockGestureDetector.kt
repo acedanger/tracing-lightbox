@@ -1,5 +1,7 @@
 package com.tracinglightbox.lock
 
+import kotlin.math.hypot
+
 /** A plain rectangle in screen pixels (kept free of android.graphics so it is JVM-testable). */
 data class Box(val left: Float, val top: Float, val right: Float, val bottom: Float) {
     fun contains(x: Float, y: Float): Boolean = x in left..right && y in top..bottom
@@ -12,6 +14,10 @@ data class UnlockConfig(
     val holdMs: Long = 3000,
     val ringDelayMs: Long = 1000,
     val confirmWindowMs: Long = 5000,
+    /** The Unlock tap must lift within this time... */
+    val tapMaxMs: Long = 500,
+    /** ...and move less than this far, so a resting hand or a pencil stroke never counts. */
+    val tapSlopPx: Float = 40f,
 )
 
 /** DOWN covers ACTION_DOWN and ACTION_POINTER_DOWN; UP covers ACTION_UP and ACTION_POINTER_UP. */
@@ -48,6 +54,9 @@ class UnlockGestureDetector(private val config: UnlockConfig) {
     private var holdStartMs = 0L
     private var confirmEndMs = 0L
     private var tapPointerId = -1
+    private var tapStartMs = 0L
+    private var tapStartX = 0f
+    private var tapStartY = 0f
 
     fun onPointer(sample: PointerSample) {
         advanceTime(sample.timeMs)
@@ -88,16 +97,27 @@ class UnlockGestureDetector(private val config: UnlockConfig) {
         if (cancelled) reset()
     }
 
+    /** Only a short, still, finger-sized tap on the button unlocks. */
     private fun onConfirmingPointer(s: PointerSample) {
-        val onButton = config.confirmButton.contains(s.x, s.y)
-        when (s.action) {
-            PointerAction.DOWN -> if (onButton) tapPointerId = s.pointerId
-            PointerAction.UP -> if (s.pointerId == tapPointerId) {
-                tapPointerId = -1
-                if (onButton) state = UnlockState.Unlocked
+        if (s.action == PointerAction.DOWN) {
+            if (config.confirmButton.contains(s.x, s.y) && !isPalm(s)) {
+                tapPointerId = s.pointerId
+                tapStartMs = s.timeMs
+                tapStartX = s.x
+                tapStartY = s.y
             }
-            PointerAction.CANCEL -> if (s.pointerId == tapPointerId) tapPointerId = -1
-            PointerAction.MOVE -> Unit
+            return
+        }
+        if (s.pointerId != tapPointerId) return
+        val stillATap = !isPalm(s) &&
+            s.timeMs - tapStartMs <= config.tapMaxMs &&
+            hypot(s.x - tapStartX, s.y - tapStartY) < config.tapSlopPx
+        when {
+            !stillATap || s.action == PointerAction.CANCEL -> tapPointerId = -1
+            s.action == PointerAction.UP -> {
+                tapPointerId = -1
+                state = UnlockState.Unlocked
+            }
         }
     }
 

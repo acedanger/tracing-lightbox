@@ -116,6 +116,40 @@ class UnlockGestureDetectorTest {
     }
 
     @Test
+    fun palmTapOnConfirmDoesNotUnlock() {
+        reachConfirming()
+        down(1, 500f, 450f, 3100, major = 80f)
+        up(1, 500f, 450f, 3200, major = 80f)
+        assertTrue(d.state is UnlockState.Confirming)
+    }
+
+    @Test
+    fun longPressOnConfirmDoesNotUnlock() {
+        reachConfirming()
+        down(1, 500f, 450f, 3100)
+        up(1, 500f, 450f, 3700)
+        assertTrue(d.state is UnlockState.Confirming)
+    }
+
+    @Test
+    fun strokeAcrossConfirmDoesNotUnlock() {
+        reachConfirming()
+        down(1, 420f, 420f, 3100)
+        move(1, 580f, 480f, 3200)
+        up(1, 580f, 480f, 3300)
+        assertTrue(d.state is UnlockState.Confirming)
+    }
+
+    @Test
+    fun tapThatGrowsIntoPalmDoesNotUnlock() {
+        reachConfirming()
+        down(1, 500f, 450f, 3100)
+        move(1, 500f, 450f, 3150, major = 80f)
+        up(1, 500f, 450f, 3200)
+        assertTrue(d.state is UnlockState.Confirming)
+    }
+
+    @Test
     fun confirmingTimesOutToIdle() {
         reachConfirming()
         d.onTick(8000)

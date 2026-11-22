@@ -57,6 +57,12 @@ notification shade, no Edge panel. The only way out is the app's own unlock
 
 Android only allows this on a tablet with **no accounts** on it.
 
+**Before turning on kiosk mode, test the unlock on this tablet without it.** Lock a
+picture, then hold the top-left corner with a fingertip for 3 seconds and tap **Unlock**.
+The app ignores palm-sized contacts (wider than 20 mm), and that size comes from the
+tablet's touch sensor. If the ring never appears with a normal fingertip, don't set up
+kiosk mode yet. Report it so the threshold can be adjusted.
+
 1. Either factory reset the tablet and skip adding any Google or Samsung account during
    setup, or remove every account in Settings → Accounts and backup → Manage accounts.
 2. Turn on USB debugging and install the app (see above).
@@ -76,6 +82,20 @@ Android only allows this on a tablet with **no accounts** on it.
 ```
 
 A factory reset also removes it.
+
+### If the tablet is stuck locked
+
+If the unlock gesture ever stops working in kiosk mode, connect the tablet by USB and run:
+
+```powershell
+& $adb shell am task lock stop
+& $adb shell am force-stop com.tracinglightbox
+```
+
+The first command ends Android's lock; it may print "Activity manager is not in
+lockTaskMode" even when it worked. The second closes the app, so it reopens unlocked. If no computer is at hand, force a restart by holding
+**Power + Volume down** for about 10 seconds; the app opens unlocked after a restart
+unless it is reopened and locked again.
 
 ## Using it
 
