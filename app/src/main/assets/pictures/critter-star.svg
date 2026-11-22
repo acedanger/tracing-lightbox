@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- star-shaped body -->
+    <path d="M 500 190 L 594 391 L 814 418 L 652 569 L 694 787 L 500 680 L 306 787 L 348 569 L 186 418 L 406 391 Z" fill="#fff"/>
+    <!-- face -->
+    <ellipse cx="450" cy="495" rx="30" ry="40" fill="#000"/>
+    <ellipse cx="550" cy="495" rx="30" ry="40" fill="#000"/>
+    <circle cx="441" cy="482" r="10" fill="#fff" stroke="none"/>
+    <circle cx="541" cy="482" r="10" fill="#fff" stroke="none"/>
+    <path d="M 470 560 Q 500 590 530 560"/>
+    <path d="M 390 555 L 405 540 M 410 565 L 425 550 M 575 555 L 590 540 M 595 565 L 610 550"/>
+    <!-- sparkles -->
+    <path d="M 170 220 L 182 255 L 218 260 L 188 280 L 198 315 L 170 295 L 142 315 L 152 280 L 122 260 L 158 255 Z"/>
+    <path d="M 830 700 L 840 728 L 870 732 L 846 748 L 854 776 L 830 760 L 806 776 L 814 748 L 790 732 L 820 728 Z"/>
+    <path d="M 820 200 L 820 250 M 795 225 L 845 225"/>
+    <path d="M 180 760 L 180 800 M 160 780 L 200 780"/>
+  </g>
+</svg>

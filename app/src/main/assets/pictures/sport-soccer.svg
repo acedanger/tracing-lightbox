@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ball -->
+    <circle cx="500" cy="500" r="300" fill="#fff"/>
+    <!-- center patch -->
+    <path d="M 500 410 L 585.6 472.2 L 552.9 572.8 L 447.1 572.8 L 414.4 472.2 Z" fill="#000"/>
+    <!-- seams out from the patch -->
+    <path d="M 500 410 L 500 310"/>
+    <path d="M 585.6 472.2 L 680.7 441.3"/>
+    <path d="M 552.9 572.8 L 611.7 653.7"/>
+    <path d="M 447.1 572.8 L 388.3 653.7"/>
+    <path d="M 414.4 472.2 L 319.3 441.3"/>
+    <!-- outer patches -->
+    <path d="M 350 240 L 500 310 L 650 240"/>
+    <path d="M 701 277 L 680.7 441.3 L 793 562"/>
+    <path d="M 774 622 L 611.7 653.7 L 531 798"/>
+    <path d="M 469 798 L 388.3 653.7 L 226 622"/>
+    <path d="M 207 562 L 319.3 441.3 L 299 277"/>
+    <!-- motion lines -->
+    <path d="M 110 380 L 170 380 M 90 470 L 160 470 M 110 560 L 170 560"/>
+  </g>
+</svg>

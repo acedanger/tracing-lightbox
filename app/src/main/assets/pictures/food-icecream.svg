@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- cone with waffle lines -->
+    <path d="M 380 520 L 620 520 L 500 910 Z" fill="#fff"/>
+    <path d="M 430 520 L 525 820 M 480 520 L 550 742 M 530 520 L 575 662 M 580 520 L 600 583"/>
+    <path d="M 570 520 L 475 820 M 520 520 L 450 742 M 470 520 L 425 662 M 420 520 L 400 583"/>
+    <!-- bottom scoop with drips -->
+    <path d="M 355 500 C 330 380 420 320 500 320 C 580 320 670 380 645 500 Q 615 560 585 510 Q 545 580 500 515 Q 455 580 415 510 Q 385 560 355 500 Z" fill="#fff"/>
+    <!-- top scoop with a face -->
+    <circle cx="500" cy="285" r="118" fill="#fff"/>
+    <circle cx="462" cy="275" r="13" fill="#000"/>
+    <circle cx="538" cy="275" r="13" fill="#000"/>
+    <path d="M 465 315 Q 500 345 535 315"/>
+    <path d="M 420 225 L 440 210 M 560 215 L 578 232 M 500 195 L 500 215 M 410 320 L 428 336 M 590 320 L 572 336"/>
+    <!-- cherry -->
+    <path d="M 510 140 Q 520 90 570 70"/>
+    <circle cx="500" cy="155" r="35" fill="#fff"/>
+  </g>
+</svg>

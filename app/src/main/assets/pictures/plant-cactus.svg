@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- arms -->
+    <path d="M 435 500 L 350 500 A 45 45 0 0 1 305 455 L 305 370 A 35 35 0 0 1 375 370 L 375 430 L 435 430" fill="#fff"/>
+    <path d="M 565 440 L 650 440 A 45 45 0 0 0 695 395 L 695 310 A 35 35 0 0 0 625 310 L 625 370 L 565 370" fill="#fff"/>
+    <!-- body -->
+    <path d="M 430 650 L 430 280 A 70 70 0 0 1 570 280 L 570 650 Z" fill="#fff"/>
+    <!-- spines -->
+    <path d="M 450 560 L 430 548 M 550 600 L 570 588 M 548 300 L 568 288 M 452 400 L 432 388 M 330 400 L 312 392 M 670 340 L 688 332"/>
+    <!-- face -->
+    <circle cx="475" cy="320" r="12" fill="#000"/>
+    <circle cx="525" cy="320" r="12" fill="#000"/>
+    <path d="M 470 355 Q 500 382 530 355"/>
+    <!-- flower on top -->
+    <circle cx="500" cy="200" r="22" fill="#fff"/>
+    <circle cx="470" cy="190" r="22" fill="#fff"/>
+    <circle cx="530" cy="190" r="22" fill="#fff"/>
+    <circle cx="485" cy="165" r="22" fill="#fff"/>
+    <circle cx="515" cy="165" r="22" fill="#fff"/>
+    <circle cx="500" cy="183" r="14" fill="#000"/>
+    <!-- pot -->
+    <path d="M 360 700 L 640 700 L 610 900 L 390 900 Z" fill="#fff"/>
+    <path d="M 330 640 L 670 640 L 670 705 L 330 705 Z" fill="#fff"/>
+    <path d="M 420 790 L 580 790"/>
+  </g>
+</svg>

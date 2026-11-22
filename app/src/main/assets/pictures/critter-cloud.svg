@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- little wings -->
+    <path d="M 230 520 C 150 470 110 500 120 550 C 150 545 175 560 185 590" fill="#fff"/>
+    <path d="M 770 520 C 850 470 890 500 880 550 C 850 545 825 560 815 590" fill="#fff"/>
+    <!-- feet -->
+    <ellipse cx="420" cy="735" rx="45" ry="28" fill="#fff"/>
+    <ellipse cx="580" cy="735" rx="45" ry="28" fill="#fff"/>
+    <!-- fluffy cloud body -->
+    <path d="M 270 700 C 190 700 165 600 235 570 C 220 470 320 410 395 455 C 430 350 580 340 615 445 C 700 400 800 470 775 570 C 845 590 835 700 760 700 Z" fill="#fff"/>
+    <!-- face -->
+    <ellipse cx="430" cy="565" rx="38" ry="48" fill="#000"/>
+    <ellipse cx="570" cy="565" rx="38" ry="48" fill="#000"/>
+    <circle cx="418" cy="548" r="12" fill="#fff" stroke="none"/>
+    <circle cx="558" cy="548" r="12" fill="#fff" stroke="none"/>
+    <path d="M 475 625 Q 500 650 525 625"/>
+    <path d="M 345 610 L 360 595 M 365 620 L 380 605 M 620 610 L 635 595 M 640 620 L 655 605"/>
+    <!-- rain drops and a small rainbow -->
+    <path d="M 400 820 Q 380 850 400 870 Q 420 850 400 820 Z"/>
+    <path d="M 600 820 Q 580 850 600 870 Q 620 850 600 820 Z"/>
+    <path d="M 420 250 A 80 80 0 0 1 580 250"/>
+    <path d="M 450 250 A 50 50 0 0 1 550 250"/>
+  </g>
+</svg>

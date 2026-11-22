@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail flukes -->
+    <path d="M 265 560 L 150 470 Q 200 560 150 650 Z" fill="#fff"/>
+    <!-- dorsal fin -->
+    <path d="M 440 345 C 450 270 500 240 545 240 C 525 280 525 315 540 345" fill="#fff"/>
+    <!-- round body -->
+    <path d="M 250 540 C 250 400 390 320 550 330 C 650 336 715 380 755 420 C 800 428 835 448 828 478 C 800 494 760 487 728 492 C 700 600 570 655 430 648 C 330 643 252 610 250 540 Z" fill="#fff"/>
+    <!-- belly -->
+    <path d="M 728 492 C 650 520 520 560 380 560"/>
+    <!-- flipper -->
+    <path d="M 500 560 C 520 620 500 670 460 690 C 465 640 460 600 455 565" fill="#fff"/>
+    <!-- big eye -->
+    <ellipse cx="620" cy="420" rx="38" ry="46" fill="#000"/>
+    <circle cx="606" cy="404" r="13" fill="#fff" stroke="none"/>
+    <path d="M 760 470 Q 785 485 812 474"/>
+    <path d="M 560 470 L 575 455 M 580 480 L 595 465"/>
+    <!-- hearts and bubbles -->
+    <path d="M 800 240 C 770 210 745 240 768 266 L 800 292 L 832 266 C 855 240 830 210 800 240 Z"/>
+    <circle cx="700" cy="250" r="22"/>
+    <circle cx="660" cy="170" r="15"/>
+    <path d="M 100 820 Q 180 780 260 820 T 420 820 T 580 820 T 740 820 T 900 820"/>
+  </g>
+</svg>

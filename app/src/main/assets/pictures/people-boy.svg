@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- legs (outlined) -->
+    <path d="M 460 700 L 452 845 M 540 700 L 548 845" stroke-width="64"/>
+    <path d="M 460 700 L 452 845 M 540 700 L 548 845" stroke="#fff" stroke-width="36"/>
+    <ellipse cx="430" cy="872" rx="55" ry="30" fill="#fff"/>
+    <ellipse cx="570" cy="872" rx="55" ry="30" fill="#fff"/>
+    <!-- shorts -->
+    <path d="M 395 615 L 605 615 L 615 735 L 515 735 L 500 690 L 485 735 L 385 735 Z" fill="#fff"/>
+    <!-- arms: one down, one waving -->
+    <path d="M 420 430 L 350 565 M 580 430 L 690 295" stroke-width="64"/>
+    <path d="M 420 430 L 350 565 M 580 430 L 690 295" stroke="#fff" stroke-width="36"/>
+    <!-- shirt -->
+    <path d="M 395 400 L 605 400 L 620 630 L 380 630 Z" fill="#fff"/>
+    <path d="M 500 470 L 515 505 L 553 508 L 524 532 L 533 569 L 500 549 L 467 569 L 476 532 L 447 508 L 485 505 Z"/>
+    <!-- hands -->
+    <circle cx="343" cy="582" r="32" fill="#fff"/>
+    <circle cx="702" cy="272" r="34" fill="#fff"/>
+    <path d="M 765 225 Q 785 260 765 295 M 798 205 Q 828 260 798 315"/>
+    <!-- head and spiky hair -->
+    <circle cx="500" cy="280" r="122" fill="#fff"/>
+    <path d="M 382 255 C 385 175 440 145 500 150 C 560 145 615 175 618 255 L 585 220 L 562 250 L 532 208 L 510 245 L 480 208 L 458 245 L 430 212 L 410 255 Z" fill="#fff"/>
+    <circle cx="455" cy="295" r="14" fill="#000"/>
+    <circle cx="545" cy="295" r="14" fill="#000"/>
+    <path d="M 455 335 Q 500 370 545 335"/>
+  </g>
+</svg>

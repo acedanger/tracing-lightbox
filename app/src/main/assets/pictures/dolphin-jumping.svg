@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail flukes -->
+    <path d="M 215 650 L 105 610 Q 150 670 125 760 L 235 690 Z" fill="#fff"/>
+    <!-- dorsal fin -->
+    <path d="M 450 365 C 470 290 515 250 565 245 C 545 290 545 330 565 365" fill="#fff"/>
+    <!-- body arching up -->
+    <path d="M 190 660 C 260 440 470 335 640 360 C 720 372 790 405 840 440 L 905 452 C 912 474 885 488 855 484 C 805 484 765 474 735 484 C 650 505 560 475 470 505 C 380 535 300 605 260 690 Z" fill="#fff"/>
+    <!-- belly line -->
+    <path d="M 735 484 C 650 460 560 440 470 470"/>
+    <!-- flipper -->
+    <path d="M 610 490 C 610 545 580 585 535 595 C 550 555 550 520 565 495" fill="#fff"/>
+    <!-- face -->
+    <circle cx="745" cy="415" r="15" fill="#000"/>
+    <path d="M 812 465 Q 840 474 870 466"/>
+    <!-- splash and waves -->
+    <path d="M 60 860 Q 140 820 220 860 T 380 860 T 540 860 T 700 860 T 860 860 T 1000 860"/>
+    <path d="M 150 800 Q 140 760 170 735 M 250 790 Q 270 750 250 715"/>
+    <circle cx="300" cy="730" r="12"/>
+  </g>
+</svg>

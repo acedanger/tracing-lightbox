@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- wrapper -->
+    <path d="M 330 570 L 670 570 L 620 890 L 380 890 Z" fill="#fff"/>
+    <path d="M 395 570 L 425 890 M 460 570 L 470 890 M 540 570 L 530 890 M 605 570 L 575 890"/>
+    <!-- frosting swirl -->
+    <path d="M 305 580 C 270 520 310 465 370 475 C 360 400 440 365 480 405 C 495 330 585 325 600 400 C 655 380 715 440 680 490 C 730 505 735 575 695 585 Z" fill="#fff"/>
+    <path d="M 360 520 Q 500 470 640 520"/>
+    <path d="M 420 450 Q 510 420 600 450"/>
+    <!-- sprinkles -->
+    <path d="M 400 545 L 420 555 M 520 535 L 540 525 M 610 550 L 630 545 M 470 490 L 485 478 M 560 480 L 575 492"/>
+    <!-- cherry -->
+    <path d="M 520 300 Q 535 250 590 235"/>
+    <circle cx="510" cy="320" r="40" fill="#fff"/>
+    <!-- face on the wrapper -->
+    <circle cx="455" cy="700" r="13" fill="#000"/>
+    <circle cx="545" cy="700" r="13" fill="#000"/>
+    <path d="M 465 745 Q 500 775 535 745"/>
+  </g>
+</svg>
