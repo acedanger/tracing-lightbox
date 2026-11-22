@@ -30,7 +30,35 @@ Picture rules, so it shows clearly through paper:
 - Only free-to-use (public domain / CC0 / explicit permission) or original art. Many
   coloring-page sites forbid copying their pages, even into a private app.
 
-## Install on a tablet
+## Install from GitHub (no computer needed)
+
+Each release on the repo's **Releases** page has two APKs:
+
+| File | Install by | Kiosk mode can be undone by |
+|---|---|---|
+| `tracing-lightbox-<version>.apk` | tapping it on the tablet | factory reset only |
+| `tracing-lightbox-<version>-usb.apk` | USB from a PC (`adb install -t`) | one USB command |
+
+To tap-install: on the tablet, open the release page in the browser (the repo is private,
+so sign in to GitHub in the browser), download `tracing-lightbox-<version>.apk`, open it,
+and allow "Install unknown apps" for the browser when asked.
+
+Both APKs are signed with the same key, from the PC they were built on. Keep building
+releases on that PC so updates install over the old version without uninstalling.
+
+To publish a new release (from the repo folder, on that PC):
+
+```powershell
+$env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
+.\gradlew.bat assembleRelease assembleDebug
+copy app\build\outputs\apk\release\app-release.apk tracing-lightbox-v1.1.apk
+copy app\build\outputs\apk\debug\app-debug.apk tracing-lightbox-v1.1-usb.apk
+gh release create v1.1 tracing-lightbox-v1.1.apk tracing-lightbox-v1.1-usb.apk --notes "What changed"
+```
+
+(Bump `versionCode` and `versionName` in `app/build.gradle.kts` first.)
+
+## Install on a tablet over USB
 
 1. On the tablet: Settings → About tablet → Software information → tap **Build number** 7
    times to turn on Developer options. Then Settings → Developer options → turn on

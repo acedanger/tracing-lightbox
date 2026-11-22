@@ -21,6 +21,9 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            // Private sideloaded app: sign with this machine's debug key so the release APK
+            // installs by tapping it. Keep building releases on this PC so updates install over it.
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
