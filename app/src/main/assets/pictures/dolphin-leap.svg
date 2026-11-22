@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail flukes -->
+    <path d="M 228 676 C 182 640 130 634 88 650 C 130 666 160 692 176 722 C 160 752 150 792 160 832 C 192 792 222 742 244 700 Z" fill="#fff"/>
+    <!-- dorsal fin -->
+    <path d="M 468 370 C 478 300 520 250 582 226 C 562 270 556 320 576 362" fill="#fff"/>
+    <!-- body -->
+    <path d="M 190 660 C 260 440 470 335 640 360 C 720 372 790 405 840 440 L 905 452 C 912 474 885 488 855 484 C 805 484 765 474 735 484 C 650 505 560 475 470 505 C 380 535 300 605 260 690 Z" fill="#fff"/>
+    <!-- countershading, mouth, eye, blowhole -->
+    <path d="M 770 424 C 700 414 640 424 590 448 C 540 472 470 472 420 502 C 370 532 322 582 292 632" stroke-width="7"/>
+    <path d="M 905 452 C 870 460 828 464 790 458" stroke-width="8"/>
+    <path d="M 732 404 Q 748 394 764 404 Q 748 414 732 404 Z" fill="#000"/>
+    <path d="M 690 372 Q 702 366 712 374" stroke-width="7"/>
+    <!-- pectoral fin -->
+    <path d="M 640 487 C 650 542 630 592 590 617 C 595 572 590 532 580 497" fill="#fff"/>
+    <!-- splash -->
+    <path d="M 40 860 C 120 830 200 830 270 850 C 340 870 420 870 500 845 C 580 820 660 822 740 846 C 820 870 900 868 980 846" stroke-width="10"/>
+    <path d="M 100 920 C 160 905 220 905 280 918 M 560 918 C 620 902 690 902 760 918" stroke-width="8"/>
+    <path d="M 340 800 Q 330 772 344 752 Q 360 774 340 800 Z" fill="#fff"/>
+    <path d="M 470 808 Q 462 782 476 764 Q 492 786 470 808 Z" fill="#fff"/>
+    <path d="M 405 770 Q 399 748 409 734 Q 421 750 405 770 Z" fill="#fff"/>
+  </g>
+</svg>

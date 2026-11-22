@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- horns, sweeping back -->
+    <path d="M 470 432 C 420 402 360 392 300 404 C 350 424 400 444 440 474 Z" fill="#fff"/>
+    <path d="M 524 396 C 472 330 402 290 318 280 C 380 312 430 352 470 424 Z" fill="#fff"/>
+    <path d="M 470 360 L 450 378 M 420 324 L 404 344 M 370 300 L 356 320" stroke-width="7"/>
+    <!-- spines down the back of the neck -->
+    <path d="M 405 640 L 338 642 L 382 680 M 372 690 L 300 702 L 346 736 M 336 752 L 264 772 L 314 802 M 306 818 L 240 846 L 290 872" fill="#fff"/>
+    <!-- head and neck -->
+    <path d="M 250 960 C 282 806 332 702 420 622 C 410 522 450 420 540 380 C 620 345 700 360 760 392 L 862 440 C 892 456 894 494 868 506 L 660 540 L 830 540 C 800 575 730 596 640 588 C 620 626 608 656 600 690 C 520 760 482 850 470 960 Z" fill="#fff"/>
+    <!-- brow and eye -->
+    <path d="M 616 410 Q 670 382 726 404"/>
+    <path d="M 640 432 Q 671 410 702 430 Q 671 450 640 432 Z" fill="#fff"/>
+    <ellipse cx="671" cy="431" rx="5" ry="12" fill="#000" stroke="none"/>
+    <!-- nostril and teeth -->
+    <path d="M 832 456 Q 848 448 858 464" stroke-width="8"/>
+    <path d="M 770 521 L 776 538 L 784 519 M 720 529 L 726 546 L 734 527" stroke-width="6" fill="#fff"/>
+    <!-- cheek scales -->
+    <path d="M 560 470 q 16 -16 32 0 q 16 -16 32 0 M 540 508 q 16 -16 32 0 q 16 -16 32 0 q 16 -16 32 0" stroke-width="6"/>
+    <!-- jaw spike -->
+    <path d="M 640 588 L 610 634 L 616 590" stroke-width="8"/>
+    <!-- neck plates -->
+    <path d="M 572 726 Q 540 744 512 742 M 540 800 Q 512 818 488 816 M 516 876 Q 492 894 478 894" stroke-width="8"/>
+    <path d="M 400 740 q 14 -14 28 0 q 14 -14 28 0 M 380 820 q 14 -14 28 0 q 14 -14 28 0 q 14 -14 28 0" stroke-width="6"/>
+  </g>
+</svg>

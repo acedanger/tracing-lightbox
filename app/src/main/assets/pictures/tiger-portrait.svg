@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ears -->
+    <path d="M 285 300 C 245 230 255 160 300 148 C 350 138 392 178 404 218" fill="#fff"/>
+    <path d="M 715 300 C 755 230 745 160 700 148 C 650 138 608 178 596 218" fill="#fff"/>
+    <path d="M 300 255 C 290 212 306 186 332 186 C 356 186 372 206 374 224" stroke-width="8"/>
+    <path d="M 700 255 C 710 212 694 186 668 186 C 644 186 628 206 626 224" stroke-width="8"/>
+    <!-- head with cheek ruff -->
+    <path d="M 500 190 C 600 190 680 220 730 280 C 790 330 822 400 836 468 L 882 500 L 842 530 L 878 574 L 832 590 L 852 640 L 800 650 C 760 750 652 832 500 842 C 348 832 240 750 200 650 L 148 640 L 168 590 L 122 574 L 158 530 L 118 500 L 164 468 C 178 400 210 330 270 280 C 320 220 400 190 500 190 Z" fill="#fff"/>
+    <!-- forehead and cheek stripes -->
+    <g fill="#000" stroke="none">
+      <path d="M 500 225 L 484 292 L 500 345 L 516 292 Z"/>
+      <path d="M 455 255 Q 472 300 462 345 Q 448 300 438 262 Z"/>
+      <path d="M 545 255 Q 528 300 538 345 Q 552 300 562 262 Z"/>
+      <path d="M 408 288 Q 430 330 420 372 Q 404 336 392 300 Z"/>
+      <path d="M 592 288 Q 570 330 580 372 Q 596 336 608 300 Z"/>
+      <path d="M 278 338 Q 330 358 352 398 Q 314 376 268 364 Z"/>
+      <path d="M 722 338 Q 670 358 648 398 Q 686 376 732 364 Z"/>
+      <path d="M 172 480 Q 250 468 302 500 Q 245 496 180 512 Z"/>
+      <path d="M 828 480 Q 750 468 698 500 Q 755 496 820 512 Z"/>
+      <path d="M 192 560 Q 270 545 322 575 Q 262 576 204 592 Z"/>
+      <path d="M 808 560 Q 730 545 678 575 Q 738 576 796 592 Z"/>
+      <path d="M 228 642 Q 290 626 340 650 Q 290 656 240 672 Z"/>
+      <path d="M 772 642 Q 710 626 660 650 Q 710 656 760 672 Z"/>
+    </g>
+    <!-- brows and eyes -->
+    <path d="M 345 418 Q 400 384 460 414" stroke-width="8"/>
+    <path d="M 655 418 Q 600 384 540 414" stroke-width="8"/>
+    <path d="M 358 450 Q 405 410 456 446 Q 410 482 358 450 Z" fill="#fff"/>
+    <path d="M 642 450 Q 595 410 544 446 Q 590 482 642 450 Z" fill="#fff"/>
+    <circle cx="410" cy="447" r="24"/>
+    <circle cx="590" cy="447" r="24"/>
+    <ellipse cx="410" cy="447" rx="7" ry="18" fill="#000" stroke="none"/>
+    <ellipse cx="590" cy="447" rx="7" ry="18" fill="#000" stroke="none"/>
+    <!-- nose bridge, nose and mouth -->
+    <path d="M 468 470 C 462 520 456 560 452 600" stroke-width="8"/>
+    <path d="M 532 470 C 538 520 544 560 548 600" stroke-width="8"/>
+    <path d="M 440 600 Q 500 584 560 600 Q 556 640 500 662 Q 444 640 440 600 Z" fill="#fff"/>
+    <path d="M 500 662 L 500 700"/>
+    <path d="M 500 700 Q 460 736 414 716"/>
+    <path d="M 500 700 Q 540 736 586 716"/>
+    <path d="M 448 760 Q 500 790 552 760" stroke-width="8"/>
+    <!-- whisker pads and whiskers -->
+    <path d="M 414 716 C 360 720 338 672 380 640" stroke-width="8"/>
+    <path d="M 586 716 C 640 720 662 672 620 640" stroke-width="8"/>
+    <g fill="#000" stroke="none">
+      <circle cx="390" cy="690" r="5"/><circle cx="410" cy="670" r="5"/><circle cx="374" cy="668" r="5"/>
+      <circle cx="610" cy="690" r="5"/><circle cx="590" cy="670" r="5"/><circle cx="626" cy="668" r="5"/>
+    </g>
+    <path d="M 376 690 L 214 668 M 382 706 L 222 722 M 392 722 L 244 774" stroke-width="6"/>
+    <path d="M 624 690 L 786 668 M 618 706 L 778 722 M 608 722 L 756 774" stroke-width="6"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- far front leg -->
+    <path d="M 430 600 L 440 850 Q 442 862 455 862 L 500 862 Q 512 860 505 848 L 482 840 L 480 600" fill="#fff"/>
+    <!-- body sitting in profile, facing left -->
+    <path d="M 290 320 C 286 300 298 284 312 272 L 318 196 L 362 244 C 386 238 410 238 432 245 L 474 182 L 480 266 C 506 300 506 352 482 388 C 524 420 604 444 652 522 C 712 612 722 722 692 792 C 672 842 622 862 560 862 L 332 862 C 314 862 310 846 326 838 L 372 832 C 366 760 362 652 382 562 C 366 520 344 452 348 422 C 322 410 302 382 302 362 C 292 352 286 336 290 320 Z" fill="#fff"/>
+    <!-- inner ears -->
+    <path d="M 328 226 L 330 256" stroke-width="8"/>
+    <path d="M 462 214 L 456 252" stroke-width="8"/>
+    <!-- eye, nose, mouth, whiskers -->
+    <path d="M 316 300 Q 332 286 352 298 Q 334 312 316 300 Z" fill="#000"/>
+    <path d="M 296 328 L 304 336" stroke-width="8"/>
+    <path d="M 304 336 Q 312 354 330 352" stroke-width="8"/>
+    <path d="M 312 340 L 190 318 M 314 350 L 196 360 M 318 360 L 214 398" stroke-width="5"/>
+    <!-- chest fur and haunch -->
+    <path d="M 356 440 L 372 456 L 362 472 L 378 488" stroke-width="8"/>
+    <path d="M 560 600 C 626 644 650 730 616 810" stroke-width="10"/>
+    <!-- front paw toes -->
+    <path d="M 352 846 L 352 860 M 470 848 L 470 860" stroke-width="7"/>
+    <!-- tail wrapped round the front -->
+    <path d="M 664 842 C 764 882 694 938 542 932 C 462 930 412 920 392 898" stroke-width="64"/>
+    <path d="M 664 842 C 764 882 694 938 542 932 C 462 930 412 920 392 898" stroke="#fff" stroke-width="40"/>
+  </g>
+</svg>
