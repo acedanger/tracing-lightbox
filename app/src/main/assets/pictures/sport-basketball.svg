@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- backboard -->
+    <path d="M 320 60 L 680 60 L 680 300 L 320 300 Z" fill="#fff"/>
+    <path d="M 440 170 L 560 170 L 560 280 L 440 280 Z"/>
+    <!-- net -->
+    <path d="M 392 322 L 425 440 L 575 440 L 608 322"/>
+    <path d="M 430 330 L 455 440 M 470 335 L 485 440 M 530 335 L 515 440 M 570 330 L 545 440"/>
+    <path d="M 405 370 L 595 370 M 415 405 L 585 405"/>
+    <!-- rim -->
+    <ellipse cx="500" cy="320" rx="112" ry="24" fill="#fff"/>
+    <!-- ball -->
+    <circle cx="500" cy="680" r="200" fill="#fff"/>
+    <path d="M 300 680 L 700 680"/>
+    <path d="M 500 480 L 500 880"/>
+    <path d="M 365 535 Q 450 680 365 825"/>
+    <path d="M 635 535 Q 550 680 635 825"/>
+    <!-- motion lines -->
+    <path d="M 200 560 L 250 590 M 180 650 L 240 660 M 200 740 L 250 730"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- feet -->
+    <ellipse cx="410" cy="845" rx="65" ry="34" fill="#fff"/>
+    <ellipse cx="590" cy="845" rx="65" ry="34" fill="#fff"/>
+    <!-- sprout -->
+    <path d="M 500 345 L 500 250"/>
+    <path d="M 500 265 C 450 200 375 200 345 232 C 385 285 450 290 500 275 Z" fill="#fff"/>
+    <path d="M 500 265 C 550 190 630 190 660 222 C 620 280 550 285 500 275 Z" fill="#fff"/>
+    <!-- round body -->
+    <path d="M 260 640 C 240 465 340 340 500 340 C 660 340 760 465 740 640 C 725 785 620 835 500 835 C 380 835 275 785 260 640 Z" fill="#fff"/>
+    <!-- little arms -->
+    <path d="M 262 600 Q 205 620 225 675"/>
+    <path d="M 738 600 Q 795 620 775 675"/>
+    <!-- big eyes -->
+    <ellipse cx="415" cy="560" rx="48" ry="62"/>
+    <ellipse cx="585" cy="560" rx="48" ry="62"/>
+    <ellipse cx="415" cy="572" rx="34" ry="46" fill="#000"/>
+    <ellipse cx="585" cy="572" rx="34" ry="46" fill="#000"/>
+    <circle cx="400" cy="552" r="13" fill="#fff" stroke="none"/>
+    <circle cx="570" cy="552" r="13" fill="#fff" stroke="none"/>
+    <path d="M 470 660 Q 500 690 530 660"/>
+    <path d="M 330 650 L 345 635 M 350 660 L 365 645 M 635 650 L 650 635 M 655 660 L 670 645"/>
+  </g>
+</svg>

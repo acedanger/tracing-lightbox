@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- stems and leaves -->
+    <path d="M 370 420 Q 390 540 430 640"/>
+    <path d="M 500 340 L 500 640"/>
+    <path d="M 630 420 Q 610 540 570 640"/>
+    <path d="M 500 600 C 440 520 380 510 350 530 C 380 580 450 610 500 620 Z" fill="#fff"/>
+    <path d="M 500 580 C 560 500 620 490 650 510 C 620 560 550 590 500 600 Z" fill="#fff"/>
+    <!-- tulips -->
+    <path d="M 310 290 L 310 360 Q 370 440 430 360 L 430 290 L 400 320 L 370 270 L 340 320 Z" fill="#fff"/>
+    <path d="M 440 210 L 440 280 Q 500 360 560 280 L 560 210 L 530 240 L 500 190 L 470 240 Z" fill="#fff"/>
+    <path d="M 570 290 L 570 360 Q 630 440 690 360 L 690 290 L 660 320 L 630 270 L 600 320 Z" fill="#fff"/>
+    <!-- pot -->
+    <path d="M 360 700 L 640 700 L 610 900 L 390 900 Z" fill="#fff"/>
+    <path d="M 320 640 L 680 640 L 680 705 L 320 705 Z" fill="#fff"/>
+    <path d="M 500 860 C 430 815 430 765 465 765 C 485 765 500 785 500 792 C 500 785 515 765 535 765 C 570 765 570 815 500 860 Z"/>
+  </g>
+</svg>

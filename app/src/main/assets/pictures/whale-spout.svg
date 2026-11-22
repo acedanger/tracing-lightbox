@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail curling up behind -->
+    <path d="M 330 620 C 260 600 210 540 200 450 L 130 400 Q 150 360 210 380 Q 230 330 270 340 L 250 440 C 260 500 300 540 360 560" fill="#fff"/>
+    <!-- body -->
+    <path d="M 290 640 C 290 450 450 360 620 365 C 790 370 870 480 860 610 C 850 730 720 780 560 780 C 420 780 300 730 290 640 Z" fill="#fff"/>
+    <!-- belly grooves -->
+    <path d="M 390 710 Q 590 790 830 680"/>
+    <path d="M 480 745 L 470 770 M 560 760 L 555 780 M 640 755 L 645 778 M 720 735 L 730 760"/>
+    <!-- flipper -->
+    <path d="M 560 640 C 590 700 570 740 520 760 C 525 720 520 690 510 660" fill="#fff"/>
+    <!-- face -->
+    <circle cx="745" cy="540" r="18" fill="#000"/>
+    <path d="M 780 625 Q 815 645 850 615"/>
+    <path d="M 700 590 L 715 575 M 720 600 L 735 585"/>
+    <!-- water spout -->
+    <path d="M 620 365 L 620 230"/>
+    <path d="M 620 250 C 590 200 540 180 500 200"/>
+    <path d="M 620 250 C 650 200 700 180 740 200"/>
+    <circle cx="490" cy="240" r="14"/>
+    <circle cx="750" cy="240" r="14"/>
+    <circle cx="620" cy="190" r="16"/>
+    <!-- waves -->
+    <path d="M 40 860 Q 120 820 200 860 T 360 860 T 520 860 T 680 860 T 840 860 T 1000 860"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- cape -->
+    <path d="M 410 400 L 290 850 Q 500 810 710 850 L 590 400 Z" fill="#fff"/>
+    <!-- legs and boots -->
+    <path d="M 460 700 L 452 830 M 540 700 L 548 830" stroke-width="64"/>
+    <path d="M 460 700 L 452 830 M 540 700 L 548 830" stroke="#fff" stroke-width="36"/>
+    <path d="M 410 810 L 490 810 L 495 885 L 390 885 Q 390 840 410 810 Z" fill="#fff"/>
+    <path d="M 590 810 L 510 810 L 505 885 L 610 885 Q 610 840 590 810 Z" fill="#fff"/>
+    <!-- shorts with belt -->
+    <path d="M 395 615 L 605 615 L 615 735 L 515 735 L 500 690 L 485 735 L 385 735 Z" fill="#fff"/>
+    <path d="M 395 640 L 605 640"/>
+    <!-- arms on hips -->
+    <path d="M 420 430 L 335 535 L 405 610 M 580 430 L 665 535 L 595 610" stroke-width="64"/>
+    <path d="M 420 430 L 335 535 L 405 610 M 580 430 L 665 535 L 595 610" stroke="#fff" stroke-width="36"/>
+    <!-- shirt with star emblem -->
+    <path d="M 395 400 L 605 400 L 620 630 L 380 630 Z" fill="#fff"/>
+    <circle cx="500" cy="510" r="62"/>
+    <path d="M 500 465 L 513 495 L 546 498 L 521 519 L 529 551 L 500 534 L 471 551 L 479 519 L 454 498 L 487 495 Z"/>
+    <!-- head, hair, mask -->
+    <circle cx="500" cy="280" r="122" fill="#fff"/>
+    <path d="M 382 255 C 385 175 440 145 500 150 C 560 145 615 175 618 255 C 590 215 540 205 500 215 C 460 205 410 215 382 255 Z" fill="#fff"/>
+    <path d="M 385 270 Q 500 245 615 270 L 612 318 Q 500 300 388 318 Z" fill="#000"/>
+    <ellipse cx="455" cy="290" rx="22" ry="14" fill="#fff" stroke="none"/>
+    <ellipse cx="545" cy="290" rx="22" ry="14" fill="#fff" stroke="none"/>
+    <path d="M 455 350 Q 500 380 545 350"/>
+  </g>
+</svg>

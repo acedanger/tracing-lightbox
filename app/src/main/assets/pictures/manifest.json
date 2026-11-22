@@ -24,6 +24,38 @@
     { "id": "unicorn-lying", "name": "Resting Unicorn", "file": "unicorn-lying.svg" },
     { "id": "unicorn-head", "name": "Unicorn Portrait", "file": "unicorn-head.svg" },
     { "id": "unicorn-anime-sitting", "name": "Anime Unicorn", "file": "unicorn-anime-sitting.svg" },
-    { "id": "unicorn-anime-flowers", "name": "Anime Unicorn with Flowers", "file": "unicorn-anime-flowers.svg" }
+    { "id": "unicorn-anime-flowers", "name": "Anime Unicorn with Flowers", "file": "unicorn-anime-flowers.svg" },
+
+    { "id": "fish-striped", "name": "Striped Fish", "file": "fish-striped.svg" },
+    { "id": "fish-puffer", "name": "Puffer Fish", "file": "fish-puffer.svg" },
+    { "id": "fish-angel", "name": "Angelfish", "file": "fish-angel.svg" },
+
+    { "id": "dolphin-jumping", "name": "Jumping Dolphin", "file": "dolphin-jumping.svg" },
+    { "id": "dolphin-ball", "name": "Dolphin with a Ball", "file": "dolphin-ball.svg" },
+    { "id": "dolphin-baby", "name": "Baby Dolphin", "file": "dolphin-baby.svg" },
+
+    { "id": "whale-spout", "name": "Splashy Whale", "file": "whale-spout.svg" },
+    { "id": "whale-baby", "name": "Baby Whale", "file": "whale-baby.svg" },
+    { "id": "narwhal", "name": "Narwhal", "file": "narwhal.svg" },
+
+    { "id": "plant-sunflower", "name": "Sunflower", "file": "plant-sunflower.svg" },
+    { "id": "plant-tulips", "name": "Tulips in a Pot", "file": "plant-tulips.svg" },
+    { "id": "plant-cactus", "name": "Happy Cactus", "file": "plant-cactus.svg" },
+
+    { "id": "food-icecream", "name": "Ice Cream", "file": "food-icecream.svg" },
+    { "id": "food-cupcake", "name": "Cupcake", "file": "food-cupcake.svg" },
+    { "id": "food-pizza", "name": "Pizza Slice", "file": "food-pizza.svg" },
+
+    { "id": "people-girl", "name": "Girl with Buns", "file": "people-girl.svg" },
+    { "id": "people-boy", "name": "Boy Waving", "file": "people-boy.svg" },
+    { "id": "people-superhero", "name": "Little Superhero", "file": "people-superhero.svg" },
+
+    { "id": "sport-soccer", "name": "Soccer Ball", "file": "sport-soccer.svg" },
+    { "id": "sport-basketball", "name": "Basketball", "file": "sport-basketball.svg" },
+    { "id": "sport-trophy", "name": "Trophy", "file": "sport-trophy.svg" },
+
+    { "id": "critter-sprout", "name": "Sprout Critter", "file": "critter-sprout.svg" },
+    { "id": "critter-cloud", "name": "Cloud Critter", "file": "critter-cloud.svg" },
+    { "id": "critter-star", "name": "Star Critter", "file": "critter-star.svg" }
   ]
 }

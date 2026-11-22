@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail -->
+    <path d="M 690 500 L 810 410 L 810 590 Z" fill="#fff"/>
+    <!-- spikes -->
+    <path d="M 684 583 L 722 640 L 653 636"/>
+    <path d="M 616 673 L 620 742 L 563 704"/>
+    <path d="M 511 718 L 480 780 L 449 718"/>
+    <path d="M 398 704 L 340 742 L 345 673"/>
+    <path d="M 307 636 L 238 640 L 276 583"/>
+    <path d="M 276 418 L 238 360 L 307 364"/>
+    <path d="M 345 327 L 340 258 L 398 296"/>
+    <path d="M 449 282 L 480 220 L 511 282"/>
+    <path d="M 563 296 L 620 258 L 616 327"/>
+    <path d="M 653 364 L 722 360 L 684 418"/>
+    <!-- round body -->
+    <circle cx="480" cy="500" r="220" fill="#fff"/>
+    <!-- face -->
+    <circle cx="390" cy="450" r="52" fill="#fff"/>
+    <circle cx="378" cy="455" r="24" fill="#000"/>
+    <circle cx="300" cy="530" r="20"/>
+    <path d="M 340 560 L 360 545 M 365 575 L 385 560"/>
+    <!-- side fin and spots -->
+    <path d="M 520 520 Q 590 560 545 620 Q 515 580 520 520 Z"/>
+    <circle cx="560" cy="400" r="14"/>
+    <circle cx="620" cy="460" r="12"/>
+    <circle cx="470" cy="640" r="12"/>
+    <!-- bubbles -->
+    <circle cx="170" cy="330" r="26"/>
+    <circle cx="140" cy="240" r="18"/>
+  </g>
+</svg>

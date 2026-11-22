@@ -26,8 +26,9 @@ bold black outline on a bright white screen, so it shines right through a sheet 
 paper. Pick a picture, slide it into place, press **Lock**, and trace. Elbows, palms
 and wiggly fingers can't bump the picture out of place.
 
-✏️ **22 pictures to trace.** Cats, dragons and unicorns, including cute anime-style
-ones, plus a tiger. Thick, clear lines, made to be traced with a pencil.
+✏️ **46 pictures to trace.** Cats, dragons and unicorns (including cute anime-style
+ones), fish, dolphins, whales, plants, food, people, sports and friendly critters,
+plus a tiger. Thick, clear lines, made to be traced with a pencil.
 
 🖐️ **Fit it to your paper.** Drag to move, pinch to zoom, twist with two fingers to
 turn. **Mirror** flips the picture so your dragon can fly the other way.
@@ -79,6 +80,11 @@ doesn't even ask for permissions.
 - Press gently with your pencil. The screen is under the paper!
 - Tape the corners of the paper down if it keeps sliding.
 
+## What's new in 1.3
+
+- 24 new pictures: fish, dolphins, whales, plants, food, people, sports and three
+  original critters (3 of each).
+
 ## What's new in 1.2
 
 - Add little extras around the picture: hearts, stars, rainbows and clouds. One per
@@ -93,7 +99,7 @@ doesn't even ask for permissions.
 
 | | |
 |---|---|
-| **Version** | 1.2 |
+| **Version** | 1.3 |
 | **Works on** | Android 9 or newer. Made for tablets (built on a Samsung Galaxy Tab S6 Lite). |
 | **Permissions** | None |
 | **Data collected** | None. Works completely offline. |

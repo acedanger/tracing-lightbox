@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail and fins (behind the body) -->
+    <path d="M 680 500 L 870 370 Q 830 500 870 630 Z" fill="#fff"/>
+    <path d="M 380 370 Q 470 230 600 380" fill="#fff"/>
+    <path d="M 420 630 Q 480 730 560 625" fill="#fff"/>
+    <!-- body -->
+    <ellipse cx="460" cy="500" rx="240" ry="155" fill="#fff"/>
+    <!-- stripes -->
+    <path d="M 390 360 Q 350 500 390 640"/>
+    <path d="M 560 365 Q 600 500 560 635"/>
+    <!-- side fin -->
+    <path d="M 470 520 Q 520 560 470 600 Q 450 560 470 520 Z"/>
+    <!-- face -->
+    <circle cx="315" cy="460" r="38" fill="#fff"/>
+    <circle cx="305" cy="462" r="17" fill="#000"/>
+    <path d="M 240 535 Q 270 555 300 535"/>
+    <!-- bubbles -->
+    <circle cx="190" cy="330" r="28"/>
+    <circle cx="150" cy="240" r="20"/>
+    <circle cx="190" cy="160" r="14"/>
+    <!-- seaweed -->
+    <path d="M 780 900 Q 740 840 780 780 Q 820 720 780 660"/>
+    <path d="M 840 900 Q 880 850 840 800 Q 800 750 840 700"/>
+    <path d="M 100 900 L 900 900"/>
+  </g>
+</svg>
