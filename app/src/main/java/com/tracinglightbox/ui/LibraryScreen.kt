@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
@@ -29,7 +30,7 @@ import com.tracinglightbox.library.assetUri
 
 @Composable
 fun LibraryScreen(pictures: List<Picture>, onOpen: (Picture) -> Unit) {
-    Column(Modifier.fillMaxSize().background(Color(0xFFFFF3E0))) {
+    Column(Modifier.fillMaxSize().background(Color(0xFFFFF3E0)).safeDrawingPadding()) {
         Text(
             "Pick a picture",
             fontSize = 40.sp,
