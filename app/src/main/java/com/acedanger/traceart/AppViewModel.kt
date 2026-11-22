@@ -14,6 +14,8 @@ import com.acedanger.traceart.library.Picture
 import com.acedanger.traceart.library.assetUri
 import com.acedanger.traceart.library.loadCatalog
 import com.acedanger.traceart.lock.Box
+import com.acedanger.traceart.photos.DrawingPhoto
+import com.acedanger.traceart.photos.PhotoStore
 import com.acedanger.traceart.trace.Circle
 import com.acedanger.traceart.trace.Decoration
 import com.acedanger.traceart.trace.DecorationKind
@@ -46,6 +48,9 @@ private const val KEY_LOCKED = "locked"
 private const val KEY_PICTURE = "picture_id"
 private const val KEY_TAG = "library_tag"
 private const val KEY_ABOUT = "about_open"
+private const val KEY_GALLERY = "gallery_open"
+private const val KEY_CAMERA = "camera_open"
+private const val KEY_CAMERA_PICTURE = "camera_picture"
 private const val SAVE_DEBOUNCE_MS = 300L
 private const val INFO_RASTER_PX = 256
 
@@ -99,6 +104,55 @@ class AppViewModel(app: Application, private val saved: SavedStateHandle) : Andr
 
     fun setAboutOpen(open: Boolean) {
         saved[KEY_ABOUT] = open
+    }
+
+    // --- Photos of finished drawings ---
+
+    val photoStore = PhotoStore(app)
+    private val _photos = MutableStateFlow<List<DrawingPhoto>>(emptyList())
+    val photos: StateFlow<List<DrawingPhoto>> = _photos.asStateFlow()
+
+    /** My Drawings is open (over the library or the trace screen). */
+    val galleryOpen: StateFlow<Boolean> = saved.getStateFlow(KEY_GALLERY, false)
+
+    /** The camera is open. [cameraPictureId] is the picture being traced, if it was opened from there. */
+    val cameraOpen: StateFlow<Boolean> = saved.getStateFlow(KEY_CAMERA, false)
+    val cameraPictureId: StateFlow<String?> = saved.getStateFlow(KEY_CAMERA_PICTURE, null)
+
+    fun refreshPhotos() {
+        viewModelScope.launch { _photos.value = photoStore.list() }
+    }
+
+    fun openGallery() {
+        saved[KEY_GALLERY] = true
+        refreshPhotos()
+    }
+
+    fun closeGallery() {
+        saved[KEY_GALLERY] = false
+    }
+
+    fun openCamera(fromPictureId: String?) {
+        saved[KEY_CAMERA_PICTURE] = fromPictureId
+        saved[KEY_CAMERA] = true
+    }
+
+    fun closeCamera() {
+        saved[KEY_CAMERA] = false
+    }
+
+    /** "Keep it!": show the new photo at the top of My Drawings. */
+    fun keepPhoto() {
+        saved[KEY_CAMERA] = false
+        openGallery()
+    }
+
+    fun deletePhoto(photo: DrawingPhoto) {
+        _photos.value = _photos.value.filterNot { it.uri == photo.uri }
+        viewModelScope.launch {
+            photoStore.delete(photo.uri)
+            refreshPhotos()
+        }
     }
 
     private val updateStore = UpdateStore(app)

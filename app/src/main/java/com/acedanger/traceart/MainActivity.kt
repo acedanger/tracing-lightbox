@@ -29,6 +29,8 @@ import com.acedanger.traceart.lock.UnlockConfig
 import com.acedanger.traceart.lock.UnlockGestureDetector
 import com.acedanger.traceart.lock.UnlockState
 import com.acedanger.traceart.ui.AboutScreen
+import com.acedanger.traceart.ui.CameraScreen
+import com.acedanger.traceart.ui.GalleryScreen
 import com.acedanger.traceart.ui.LibraryScreen
 import com.acedanger.traceart.ui.TraceScreen
 import com.acedanger.traceart.ui.UnlockOverlay
@@ -179,8 +181,34 @@ private fun App(
     val update by vm.update.collectAsStateWithLifecycle()
     val aboutOpen by vm.aboutOpen.collectAsStateWithLifecycle()
 
+    val photos by vm.photos.collectAsStateWithLifecycle()
+    val galleryOpen by vm.galleryOpen.collectAsStateWithLifecycle()
+    val cameraOpen by vm.cameraOpen.collectAsStateWithLifecycle()
+    val cameraPictureId by vm.cameraPictureId.collectAsStateWithLifecycle()
+
+    // Pick up photos added or removed in the Samsung Gallery while we were away.
+    val lifecycle = androidx.lifecycle.compose.LocalLifecycleOwner.current.lifecycle
+    androidx.compose.runtime.LaunchedEffect(galleryOpen) {
+        if (galleryOpen) lifecycle.repeatOnLifecycle(Lifecycle.State.RESUMED) { vm.refreshPhotos() }
+    }
+
     val current = picture
-    if (current == null && aboutOpen) {
+    if (cameraOpen && !locked) {
+        CameraScreen(
+            traced = vm.pictures.firstOrNull { it.id == cameraPictureId },
+            store = vm.photoStore,
+            onClose = vm::closeCamera,
+            onKeep = vm::keepPhoto,
+        )
+    } else if (galleryOpen && !locked) {
+        GalleryScreen(
+            photos = photos,
+            pictures = vm.pictures,
+            onBack = vm::closeGallery,
+            onTakePhoto = { vm.openCamera(null) },
+            onDelete = vm::deletePhoto,
+        )
+    } else if (current == null && aboutOpen) {
         AboutScreen(
             update = update,
             onBack = { vm.setAboutOpen(false) },
@@ -196,6 +224,7 @@ private fun App(
             version = update.installed,
             updateAvailable = update.updateAvailable,
             onAbout = { vm.setAboutOpen(true) },
+            onMyDrawings = vm::openGallery,
         )
     } else {
         TraceScreen(
@@ -206,6 +235,7 @@ private fun App(
             onBack = vm::closePicture,
             onFit = vm::fit,
             onMirror = vm::toggleMirror,
+            onPhoto = { vm.openCamera(current.id) },
             onLock = { vm.setLocked(true) },
             decorations = decorations,
             aspect = info?.aspect ?: 1f,

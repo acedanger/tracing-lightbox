@@ -88,6 +88,26 @@ Tap it for the **About** page: who made the app, a link to this repo, and update
 checking. An orange **↑** next to the version means a newer version is on GitHub;
 the About page has the steps to install it.
 
+**Save your drawing!** When you've finished tracing, tap the pink **📷 Photo** button.
+Take the paper off the screen, lay it on a table, and hold the tablet above it so the
+drawing fits inside the white corners, then tap the big round button. Ta-da! Tap
+**Keep it!** to save it, or **Try again** for a new shot. Every saved drawing is in
+**🖼️ My Drawings** on the library screen, and in the tablet's Gallery app in the
+**Trace Art** album. In My Drawings, tap a drawing to see it big, swipe for the next
+one, and tap **Show outline** to put the picture you traced next to it.
+
+## What's new in 1.8
+
+- **Take a photo of your drawing.** A pink 📷 Photo button on the tracing screen opens
+  the camera, with a paper-shaped frame to line the drawing up. The photo is cropped
+  to the frame, then celebrated with a "Ta-da!" and a shower of hearts and stars.
+- **My Drawings**, a gallery of only the drawings taken in Trace Art. Each one shows
+  which picture was traced, opens full screen, and can show the outline beside it,
+  which is great for showing off. Delete asks first.
+- Photos are also saved to the tablet's Gallery app, in a **Trace Art** album.
+- The app asks for the camera the first time you take a photo.
+- Now needs Android 10 or newer (the Tab S6 Lite has it).
+
 ## What's new in 1.7
 
 - The installed version shows in the top-right corner of the library.
@@ -135,10 +155,14 @@ the About page has the steps to install it.
 
 | | |
 |---|---|
-| **Version** | 1.7 |
-| **Works on** | Android 9 or newer. Made for tablets (built on a Samsung Galaxy Tab S6 Lite). |
-| **Permissions** | Internet, only to ask GitHub whether a newer version is out |
-| **Data collected** | None. Everything works offline; the update check only reads this repo's latest release. |
+| **Version** | 1.8 |
+| **Works on** | Android 10 or newer. Made for tablets (built on a Samsung Galaxy Tab S6 Lite). |
+| **Permissions** | Camera, to photograph finished drawings (asked the first time). Internet, only to ask GitHub whether a newer version is out. |
+| **Data collected** | None. Drawing photos stay on the tablet (Pictures/Trace Art). The update check only reads this repo's latest release. |
+
+Updating the app keeps My Drawings. If Trace Art is ever **uninstalled** and installed
+again, the old photos stay in the Gallery app's Trace Art album, but My Drawings starts
+empty: Android only lets an app list the photos it saved itself.
 | **Ads / purchases** | None |
 
 ## Get it
@@ -207,9 +231,9 @@ To publish a new release (from the repo folder, on that PC):
 ```powershell
 $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 .\gradlew.bat assembleRelease assembleDebug
-copy app\build\outputs\apk\release\app-release.apk trace-art-v1.7.apk
-copy app\build\outputs\apk\debug\app-debug.apk trace-art-v1.7-usb.apk
-gh release create v1.7 trace-art-v1.7.apk trace-art-v1.7-usb.apk --notes "What changed"
+copy app\build\outputs\apk\release\app-release.apk trace-art-v1.8.apk
+copy app\build\outputs\apk\debug\app-debug.apk trace-art-v1.8-usb.apk
+gh release create v1.8 trace-art-v1.8.apk trace-art-v1.8-usb.apk --notes "What changed"
 ```
 
 (Bump `versionCode` and `versionName` in `app/build.gradle.kts` first.)

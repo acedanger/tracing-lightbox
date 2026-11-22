@@ -4,11 +4,15 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.foundation.layout.PaddingValues
@@ -63,12 +67,16 @@ fun LibraryScreen(
     version: String = "",
     updateAvailable: Boolean = false,
     onAbout: () -> Unit = {},
+    onMyDrawings: () -> Unit = {},
 ) {
     val tags = remember(pictures) { allTags(pictures) }
     val shown = remember(pictures, selectedTag) { filterByTag(pictures, selectedTag) }
     Column(Modifier.fillMaxSize().background(Color(0xFFFFF3E0)).safeDrawingPadding()) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
+        // Title and buttons share a row on a tablet; on a narrow screen the buttons wrap below.
+        FlowRow(
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            itemVerticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.fillMaxWidth().padding(start = 32.dp, end = 24.dp, top = 32.dp, bottom = 8.dp),
         ) {
             Text(
@@ -76,9 +84,18 @@ fun LibraryScreen(
                 fontSize = 40.sp,
                 lineHeight = 46.sp,
                 fontWeight = FontWeight.Bold,
-                modifier = Modifier.weight(1f),
+                maxLines = 1,
+                modifier = Modifier.weight(1f).widthIn(min = 300.dp),
             )
-            VersionChip(version, updateAvailable, onAbout)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Button(
+                    onClick = onMyDrawings,
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF4F8B)),
+                    shape = RoundedCornerShape(28.dp),
+                    modifier = Modifier.padding(end = 12.dp).heightIn(min = 56.dp),
+                ) { Text("🖼️  My Drawings", fontSize = 20.sp, fontWeight = FontWeight.Bold) }
+                VersionChip(version, updateAvailable, onAbout)
+            }
         }
         if (tags.isNotEmpty()) {
             // One tag at a time; tapping the selected tag again (or "All") shows everything.
