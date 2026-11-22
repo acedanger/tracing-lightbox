@@ -1,4 +1,4 @@
-package com.tracinglightbox.trace
+package com.acedanger.traceart.trace
 
 const val MIN_SCALE = 0.25f
 const val MAX_SCALE = 8f

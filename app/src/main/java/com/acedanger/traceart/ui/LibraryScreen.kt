@@ -1,4 +1,4 @@
-package com.tracinglightbox.ui
+package com.acedanger.traceart.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -25,8 +25,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import com.tracinglightbox.library.Picture
-import com.tracinglightbox.library.assetUri
+import com.acedanger.traceart.library.Picture
+import com.acedanger.traceart.library.assetUri
 
 @Composable
 fun LibraryScreen(pictures: List<Picture>, onOpen: (Picture) -> Unit) {

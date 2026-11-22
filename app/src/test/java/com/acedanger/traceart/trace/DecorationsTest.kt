@@ -1,6 +1,6 @@
-package com.tracinglightbox.trace
+package com.acedanger.traceart.trace
 
-import com.tracinglightbox.lock.Box
+import com.acedanger.traceart.lock.Box
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull

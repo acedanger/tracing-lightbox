@@ -1,4 +1,4 @@
-package com.tracinglightbox.lock
+package com.acedanger.traceart.lock
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
