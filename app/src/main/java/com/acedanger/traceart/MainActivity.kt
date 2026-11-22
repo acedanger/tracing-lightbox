@@ -28,6 +28,7 @@ import com.acedanger.traceart.lock.PointerSample
 import com.acedanger.traceart.lock.UnlockConfig
 import com.acedanger.traceart.lock.UnlockGestureDetector
 import com.acedanger.traceart.lock.UnlockState
+import com.acedanger.traceart.ui.AboutScreen
 import com.acedanger.traceart.ui.LibraryScreen
 import com.acedanger.traceart.ui.TraceScreen
 import com.acedanger.traceart.ui.UnlockOverlay
@@ -82,6 +83,11 @@ class MainActivity : ComponentActivity() {
             }
             MaterialTheme(colorScheme = lightColorScheme()) { App(vm, unlockState, confirmBox, lock.isKiosk) }
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        vm.checkForUpdateIfDue() // on launch, and when the tablet comes back after a day
     }
 
     override fun onDestroy() {
@@ -170,13 +176,26 @@ private fun App(
     val info by vm.pictureInfo.collectAsStateWithLifecycle()
     val selectedTag by vm.selectedTag.collectAsStateWithLifecycle()
 
+    val update by vm.update.collectAsStateWithLifecycle()
+    val aboutOpen by vm.aboutOpen.collectAsStateWithLifecycle()
+
     val current = picture
-    if (current == null) {
+    if (current == null && aboutOpen) {
+        AboutScreen(
+            update = update,
+            onBack = { vm.setAboutOpen(false) },
+            onCheckNow = vm::checkForUpdateNow,
+            onAutoCheck = vm::setAutoCheck,
+        )
+    } else if (current == null) {
         LibraryScreen(
             pictures = vm.pictures,
             onOpen = vm::openPicture,
             selectedTag = selectedTag,
             onSelectTag = vm::selectTag,
+            version = update.installed,
+            updateAvailable = update.updateAvailable,
+            onAbout = { vm.setAboutOpen(true) },
         )
     } else {
         TraceScreen(

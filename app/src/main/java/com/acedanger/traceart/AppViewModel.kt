@@ -29,6 +29,11 @@ import com.acedanger.traceart.trace.placeDecoration
 import com.acedanger.traceart.trace.toScreen
 import com.acedanger.traceart.trace.toggleMirror
 import com.acedanger.traceart.trace.withDecoration
+import com.acedanger.traceart.update.ReleaseInfo
+import com.acedanger.traceart.update.UpdateStore
+import com.acedanger.traceart.update.fetchLatestRelease
+import com.acedanger.traceart.update.isCheckDue
+import com.acedanger.traceart.update.isNewer
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -40,8 +45,21 @@ import kotlin.random.Random
 private const val KEY_LOCKED = "locked"
 private const val KEY_PICTURE = "picture_id"
 private const val KEY_TAG = "library_tag"
+private const val KEY_ABOUT = "about_open"
 private const val SAVE_DEBOUNCE_MS = 300L
 private const val INFO_RASTER_PX = 256
+
+/** Update checking as the About screen and library header show it. */
+data class UpdateState(
+    val installed: String,
+    val autoCheck: Boolean = true,
+    val lastCheckMs: Long? = null,
+    val latest: ReleaseInfo? = null,
+    val checking: Boolean = false,
+    val lastCheckFailed: Boolean = false,
+) {
+    val updateAvailable: Boolean get() = isNewer(latest?.tag, installed)
+}
 
 /** What the decoration placer needs to know about a picture: its shape and where its lines are. */
 data class PictureInfo(val aspect: Float, val content: Box)
@@ -74,6 +92,51 @@ class AppViewModel(app: Application, private val saved: SavedStateHandle) : Andr
 
     fun selectTag(tag: String?) {
         saved[KEY_TAG] = tag
+    }
+
+    /** The About screen (shown over the library) is open. */
+    val aboutOpen: StateFlow<Boolean> = saved.getStateFlow(KEY_ABOUT, false)
+
+    fun setAboutOpen(open: Boolean) {
+        saved[KEY_ABOUT] = open
+    }
+
+    private val updateStore = UpdateStore(app)
+    private val _update = MutableStateFlow(UpdateState(installed = BuildConfig.VERSION_NAME))
+    val update: StateFlow<UpdateState> = _update.asStateFlow()
+    private var checkJob: Job? = null
+
+    /** Called when the app opens or comes back: checks GitHub if automatic checks are on and a day has passed. */
+    fun checkForUpdateIfDue() {
+        if (checkJob?.isActive == true) return
+        checkJob = viewModelScope.launch {
+            val s = updateStore.load()
+            _update.value = _update.value.copy(autoCheck = s.autoCheck, lastCheckMs = s.lastCheckMs, latest = s.latest)
+            if (s.autoCheck && isCheckDue(s.lastCheckMs, System.currentTimeMillis())) runCheck()
+        }
+    }
+
+    /** "Check now" on the About screen: always asks GitHub. */
+    fun checkForUpdateNow() {
+        if (checkJob?.isActive == true) return
+        checkJob = viewModelScope.launch { runCheck() }
+    }
+
+    fun setAutoCheck(on: Boolean) {
+        _update.value = _update.value.copy(autoCheck = on)
+        viewModelScope.launch { updateStore.setAutoCheck(on) }
+    }
+
+    private suspend fun runCheck() {
+        _update.value = _update.value.copy(checking = true, lastCheckFailed = false)
+        val latest = fetchLatestRelease()
+        if (latest == null) {
+            _update.value = _update.value.copy(checking = false, lastCheckFailed = true)
+            return
+        }
+        val now = System.currentTimeMillis()
+        updateStore.saveCheck(now, latest)
+        _update.value = _update.value.copy(checking = false, lastCheckMs = now, latest = latest)
     }
 
     private val _showKioskNote = MutableStateFlow(false)
