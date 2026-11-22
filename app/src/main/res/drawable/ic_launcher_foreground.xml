@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- A sheet of paper with a pencil line -->
+    <path android:fillColor="#FFFFFF" android:strokeColor="#212121" android:strokeWidth="2"
+        android:pathData="M36,30 L72,30 L72,78 L36,78 Z" />
+    <path android:strokeColor="#212121" android:strokeWidth="3" android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M42,64 C48,44 56,70 66,46" />
+</vector>
