@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect x="0" y="0" width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail (behind body, on the right) -->
+    <path d="M 680 850 C 880 860 925 690 865 590 A 42 42 0 0 0 790 615 C 845 700 820 800 690 800"/>
+    <path d="M 806 830 L 798 806"/>
+    <path d="M 880 728 L 848 722"/>
+    <path d="M 868 634 L 836 650"/>
+
+    <!-- body -->
+    <path d="M 400 540 C 320 620 300 760 335 850 L 665 850 C 700 760 680 620 600 540"/>
+    <!-- front legs -->
+    <path d="M 455 680 L 450 830"/>
+    <path d="M 545 680 L 550 830"/>
+    <!-- paws -->
+    <ellipse cx="420" cy="860" rx="68" ry="38" fill="#fff"/>
+    <ellipse cx="580" cy="860" rx="68" ry="38" fill="#fff"/>
+    <path d="M 400 838 L 400 868"/>
+    <path d="M 440 838 L 440 868"/>
+    <path d="M 560 838 L 560 868"/>
+    <path d="M 600 838 L 600 868"/>
+    <!-- body stripes -->
+    <path d="M 322 680 Q 352 692 378 668"/>
+    <path d="M 314 762 Q 350 774 380 750"/>
+    <path d="M 678 680 Q 648 692 622 668"/>
+    <path d="M 686 762 Q 650 774 620 750"/>
+
+    <!-- ears -->
+    <path d="M 335 228 C 296 150 330 96 382 108 C 420 116 440 148 446 172"/>
+    <path d="M 362 200 C 352 162 372 140 400 148"/>
+    <path d="M 665 228 C 704 150 670 96 618 108 C 580 116 560 148 554 172"/>
+    <path d="M 638 200 C 648 162 628 140 600 148"/>
+
+    <!-- head (white fill hides body lines behind it) -->
+    <ellipse cx="500" cy="360" rx="230" ry="200" fill="#fff"/>
+
+    <!-- forehead stripes -->
+    <path d="M 478 168 L 500 232 L 522 168"/>
+    <path d="M 430 180 Q 452 212 444 244"/>
+    <path d="M 570 180 Q 548 212 556 244"/>
+    <!-- cheek stripes -->
+    <path d="M 272 330 Q 312 340 336 322"/>
+    <path d="M 276 392 Q 316 400 338 380"/>
+    <path d="M 728 330 Q 688 340 664 322"/>
+    <path d="M 724 392 Q 684 400 662 380"/>
+
+    <!-- eyes -->
+    <circle cx="420" cy="320" r="40"/>
+    <circle cx="580" cy="320" r="40"/>
+    <circle cx="430" cy="326" r="15" fill="#000"/>
+    <circle cx="570" cy="326" r="15" fill="#000"/>
+
+    <!-- nose and mouth -->
+    <path d="M 466 404 Q 500 392 534 404 Q 522 436 500 442 Q 478 436 466 404 Z"/>
+    <path d="M 500 442 L 500 466"/>
+    <path d="M 440 462 Q 470 500 500 466 Q 530 500 560 462"/>
+
+    <!-- whiskers -->
+    <path d="M 405 440 L 292 418"/>
+    <path d="M 405 462 L 286 466"/>
+    <path d="M 405 484 L 296 512"/>
+    <path d="M 595 440 L 708 418"/>
+    <path d="M 595 462 L 714 466"/>
+    <path d="M 595 484 L 704 512"/>
+  </g>
+</svg>

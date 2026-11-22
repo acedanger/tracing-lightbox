@@ -1,0 +1,5 @@
+{
+  "pictures": [
+    { "id": "tiger", "name": "Tiger", "file": "tiger.svg" }
+  ]
+}
