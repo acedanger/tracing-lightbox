@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <defs>
+    <clipPath id="disk"><circle cx="500" cy="340" r="96"/></clipPath>
+  </defs>
+  <g fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- stem (outlined) -->
+    <path d="M 500 460 C 512 600 488 780 500 960" stroke-width="44"/>
+    <path d="M 500 460 C 512 600 488 780 500 960" stroke="#fff" stroke-width="22"/>
+    <!-- leaves with veins -->
+    <path d="M 505 700 C 560 620 700 600 790 640 C 730 690 690 750 610 770 C 562 782 530 760 505 700 Z" fill="#fff"/>
+    <path d="M 505 700 C 600 670 700 652 786 642 M 580 682 L 620 730 M 650 668 L 690 720 M 720 656 L 744 690" stroke-width="7"/>
+    <path d="M 495 820 C 440 740 300 722 214 764 C 276 812 316 870 396 888 C 444 898 476 876 495 820 Z" fill="#fff"/>
+    <path d="M 495 820 C 400 790 300 774 218 764 M 420 800 L 380 848 M 350 788 L 312 838 M 284 776 L 260 812" stroke-width="7"/>
+    <!-- back row of petals -->
+    <g fill="#fff">
+      <path id="pb" d="M 500 240 C 466 196 470 126 500 72 C 530 126 534 196 500 240 Z" transform="rotate(11.25 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(22.5 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(45 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(67.5 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(90 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(112.5 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(135 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(157.5 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(180 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(202.5 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(225 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(247.5 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(270 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(292.5 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(315 500 340)"/>
+      <use xlink:href="#pb" transform="rotate(337.5 500 340)"/>
+    </g>
+    <!-- front row of petals with a center vein -->
+    <g fill="#fff">
+      <g id="pf"><path d="M 500 236 C 462 186 464 108 500 46 C 536 108 538 186 500 236 Z"/><path d="M 500 222 L 500 82" stroke-width="5"/></g>
+      <use xlink:href="#pf" transform="rotate(22.5 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(45 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(67.5 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(90 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(112.5 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(135 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(157.5 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(180 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(202.5 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(225 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(247.5 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(270 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(292.5 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(315 500 340)"/>
+      <use xlink:href="#pf" transform="rotate(337.5 500 340)"/>
+    </g>
+    <!-- seed disk with a lattice -->
+    <circle cx="500" cy="340" r="110" fill="#fff"/>
+    <g clip-path="url(#disk)" stroke-width="5">
+      <path d="M 380 220 L 620 460 M 380 250 L 590 460 M 380 280 L 560 460 M 380 310 L 530 460 M 380 340 L 500 460 M 410 220 L 620 430 M 440 220 L 620 400 M 470 220 L 620 370 M 500 220 L 620 340 M 530 220 L 620 310 M 560 220 L 620 280"/>
+      <path d="M 620 220 L 380 460 M 620 250 L 410 460 M 620 280 L 440 460 M 620 310 L 470 460 M 620 340 L 500 460 M 590 220 L 380 430 M 560 220 L 380 400 M 530 220 L 380 370 M 500 220 L 380 340 M 470 220 L 380 310 M 440 220 L 380 280"/>
+    </g>
+    <circle cx="500" cy="340" r="96" stroke-width="8"/>
+  </g>
+</svg>

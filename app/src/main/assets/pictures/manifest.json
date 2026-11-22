@@ -56,6 +56,15 @@
 
     { "id": "critter-sprout", "name": "Sprout Critter", "file": "critter-sprout.svg", "tags": ["critters"] },
     { "id": "critter-cloud", "name": "Cloud Critter", "file": "critter-cloud.svg", "tags": ["critters"] },
-    { "id": "critter-star", "name": "Star Critter", "file": "critter-star.svg", "tags": ["critters"] }
+    { "id": "critter-star", "name": "Star Critter", "file": "critter-star.svg", "tags": ["critters"] },
+
+    { "id": "tiger-portrait", "name": "Tiger Portrait", "file": "tiger-portrait.svg", "tags": ["animals", "detailed"] },
+    { "id": "cat-elegant", "name": "Elegant Cat", "file": "cat-elegant.svg", "tags": ["animals", "cats", "detailed"] },
+    { "id": "dragon-head", "name": "Dragon Head", "file": "dragon-head.svg", "tags": ["dragons", "fantasy", "detailed"] },
+    { "id": "unicorn-profile", "name": "Unicorn Profile", "file": "unicorn-profile.svg", "tags": ["unicorns", "fantasy", "detailed"] },
+    { "id": "dolphin-leap", "name": "Leaping Dolphin", "file": "dolphin-leap.svg", "tags": ["animals", "ocean", "dolphins", "detailed"] },
+    { "id": "whale-humpback", "name": "Humpback Whale", "file": "whale-humpback.svg", "tags": ["animals", "ocean", "whales", "detailed"] },
+    { "id": "sunflower-botanical", "name": "Botanical Sunflower", "file": "sunflower-botanical.svg", "tags": ["plants", "detailed"] },
+    { "id": "butterfly", "name": "Butterfly", "file": "butterfly.svg", "tags": ["animals", "detailed"] }
   ]
 }

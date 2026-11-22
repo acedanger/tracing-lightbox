@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail flukes -->
+    <path d="M 160 545 C 120 470 72 420 28 416 C 58 458 78 500 88 545 C 78 588 58 628 28 668 C 78 660 126 610 160 556 Z" fill="#fff"/>
+    <!-- far pectoral fin -->
+    <path d="M 650 590 C 660 650 690 700 730 730 C 712 680 700 640 700 600" fill="#fff"/>
+    <!-- body -->
+    <path d="M 905 470 C 885 428 822 408 740 403 C 620 396 480 408 360 438 C 280 458 220 488 160 520 L 140 530 C 126 532 118 540 122 550 C 130 560 142 562 154 558 L 172 560 C 242 580 332 600 452 605 C 602 612 742 600 832 570 C 882 552 910 512 905 470 Z" fill="#fff"/>
+    <!-- small dorsal hump -->
+    <path d="M 300 452 C 320 420 344 408 362 408 C 356 424 354 436 362 444" fill="#fff"/>
+    <!-- throat grooves -->
+    <path d="M 872 548 C 792 584 700 598 610 600" stroke-width="6"/>
+    <path d="M 860 562 C 780 594 690 606 600 606" stroke-width="6"/>
+    <path d="M 884 530 C 806 568 716 584 630 588" stroke-width="6"/>
+    <!-- mouth line, eye, head bumps -->
+    <path d="M 905 480 C 846 502 784 508 720 502" stroke-width="8"/>
+    <path d="M 690 488 Q 704 478 718 488 Q 704 498 690 488 Z" fill="#000"/>
+    <path d="M 680 470 Q 704 458 726 470" stroke-width="6"/>
+    <g stroke-width="6">
+      <circle cx="830" cy="430" r="8"/><circle cx="790" cy="420" r="8"/><circle cx="862" cy="448" r="7"/>
+      <circle cx="808" cy="446" r="7"/><circle cx="846" cy="466" r="6"/>
+    </g>
+    <!-- near pectoral fin with knobby edge -->
+    <path d="M 610 592 C 594 682 556 762 500 822 C 478 844 452 832 464 806 C 498 742 528 672 544 596" fill="#fff"/>
+    <path d="M 530 700 q 10 -10 20 0 M 512 748 q 10 -10 20 0 M 490 792 q 10 -10 20 0" stroke-width="6"/>
+    <!-- water and bubbles -->
+    <path d="M 40 200 C 140 180 240 220 340 200 C 440 180 540 220 640 200 C 740 180 840 220 960 200" stroke-width="8"/>
+    <circle cx="930" cy="400" r="16" stroke-width="8"/>
+    <circle cx="950" cy="330" r="10" stroke-width="7"/>
+    <circle cx="920" cy="280" r="7" stroke-width="6"/>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <g id="half">
+      <!-- lower wing -->
+      <path d="M 515 470 C 640 470 762 522 792 622 C 816 702 762 762 690 742 C 620 722 560 642 515 500 Z" fill="#fff"/>
+      <path d="M 540 500 C 620 510 712 556 740 630 C 756 680 726 708 690 700 C 640 690 590 630 548 520" stroke-width="7"/>
+      <circle cx="700" cy="652" r="36" stroke-width="8"/>
+      <circle cx="700" cy="652" r="15" fill="#000" stroke="none"/>
+      <!-- upper wing -->
+      <path d="M 512 420 C 562 300 682 198 802 188 C 882 182 904 260 862 330 C 822 400 722 442 520 462 Z" fill="#fff"/>
+      <path d="M 562 410 C 622 330 702 270 792 250 C 832 248 838 290 812 322 C 772 372 682 410 562 430" stroke-width="7"/>
+      <!-- veins -->
+      <path d="M 520 440 L 760 260 M 530 448 L 820 300 M 540 456 L 700 230" stroke-width="5"/>
+      <path d="M 525 490 L 660 700 M 530 485 L 750 620" stroke-width="5"/>
+      <!-- edge spots -->
+      <circle cx="840" cy="230" r="14" stroke-width="7"/>
+      <circle cx="858" cy="282" r="10" stroke-width="7"/>
+      <circle cx="776" cy="716" r="10" stroke-width="7"/>
+      <circle cx="728" cy="738" r="8" stroke-width="6"/>
+      <!-- antenna -->
+      <path d="M 508 338 C 530 270 570 222 612 202" stroke-width="7"/>
+      <circle cx="616" cy="200" r="11" fill="#000" stroke="none"/>
+    </g>
+    <use xlink:href="#half" transform="translate(1000,0) scale(-1,1)"/>
+    <!-- body -->
+    <ellipse cx="500" cy="572" rx="20" ry="104" fill="#fff"/>
+    <path d="M 482 520 L 518 520 M 481 560 L 519 560 M 482 600 L 518 600 M 486 640 L 514 640" stroke-width="5"/>
+    <ellipse cx="500" cy="440" rx="26" ry="58" fill="#fff"/>
+    <circle cx="500" cy="366" r="28" fill="#fff"/>
+  </g>
+</svg>

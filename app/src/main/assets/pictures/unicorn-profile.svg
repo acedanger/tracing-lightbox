@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- flowing mane behind the neck -->
+    <path d="M 522 292 C 432 300 380 362 400 432 C 340 472 330 542 372 582 C 310 622 300 702 342 752 C 290 792 292 872 332 960 L 420 960 C 392 800 410 650 480 420 Z" fill="#fff"/>
+    <path d="M 482 322 C 422 362 422 422 452 472 M 442 462 C 382 522 392 582 422 622 M 412 642 C 352 702 362 782 382 822" stroke-width="7"/>
+    <!-- spiral horn -->
+    <path d="M 586 304 L 706 116 L 634 322 Z" fill="#fff"/>
+    <path d="M 606 270 L 640 282 M 632 222 L 662 232 M 658 176 L 682 184" stroke-width="7"/>
+    <!-- head and neck -->
+    <path d="M 340 960 C 346 762 386 562 474 402 C 492 352 506 316 522 290 L 546 206 L 586 286 C 642 302 682 342 712 402 C 752 482 792 572 816 642 C 836 696 812 740 762 742 C 736 744 722 736 712 726 C 690 736 660 736 630 716 C 600 700 576 690 560 690 C 576 762 612 852 640 960 Z" fill="#fff"/>
+    <!-- forelock -->
+    <path d="M 548 288 C 522 330 544 362 520 394 C 562 372 584 332 572 300" fill="#fff"/>
+    <!-- ear detail, cheek, eye, nostril, mouth -->
+    <path d="M 550 236 L 562 280" stroke-width="7"/>
+    <path d="M 560 690 C 520 650 522 562 600 542 C 650 532 680 582 670 622" stroke-width="8"/>
+    <path d="M 596 422 Q 626 400 656 418 Q 626 440 596 422 Z" fill="#fff"/>
+    <circle cx="627" cy="421" r="9" fill="#000" stroke="none"/>
+    <path d="M 600 412 L 588 398 M 616 404 L 610 390" stroke-width="6"/>
+    <path d="M 768 650 Q 790 638 802 662" stroke-width="8"/>
+    <path d="M 760 712 Q 736 720 714 712" stroke-width="7"/>
+    <!-- sparkles -->
+    <path d="M 800 120 L 812 160 L 850 168 L 812 178 L 800 216 L 788 178 L 750 168 L 788 160 Z"/>
+    <path d="M 870 300 L 877 322 L 898 326 L 877 331 L 870 352 L 863 331 L 842 326 L 863 322 Z"/>
+  </g>
+</svg>
