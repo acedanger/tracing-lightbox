@@ -62,7 +62,9 @@ doesn't even ask for permissions.
 
 ## How to use it
 
-1. **Pick a picture** from the library.
+1. **Pick a picture** from the library. Looking for something special? Tap a tag
+   like **Cats**, **Ocean** or **Anime** at the top to see just those; tap **All**
+   to see everything again.
 2. **Lay your paper on the screen.** Drag, pinch and twist the picture until it sits
    where you want it on the paper. **Fit** puts it back in the middle;
    **Mirror** flips it. Want hearts or stars around it? Tap the heart, star, rainbow
@@ -79,6 +81,11 @@ doesn't even ask for permissions.
 - Trace in a dim room. The darker the room, the brighter the lines look.
 - Press gently with your pencil. The screen is under the paper!
 - Tape the corners of the paper down if it keeps sliding.
+
+## What's new in 1.5
+
+- Every picture now has tags, and the library has a row of tag buttons (Animals,
+  Anime, Cats, Dragons, Ocean, Food, Sports and more) to find a picture fast.
 
 ## What's new in 1.4
 
@@ -105,7 +112,7 @@ doesn't even ask for permissions.
 
 | | |
 |---|---|
-| **Version** | 1.4 |
+| **Version** | 1.5 |
 | **Works on** | Android 9 or newer. Made for tablets (built on a Samsung Galaxy Tab S6 Lite). |
 | **Permissions** | None |
 | **Data collected** | None. Works completely offline. |
@@ -143,7 +150,9 @@ The APK is at `app\build\outputs\apk\debug\app-debug.apk`.
 
 1. Put the file in `app/src/main/assets/pictures/`. SVG (preferred), PNG, or JPG.
 2. Add a line to `app/src/main/assets/pictures/manifest.json`:
-   `{ "id": "lion", "name": "Lion", "file": "lion.svg" }` (ids must be unique).
+   `{ "id": "lion", "name": "Lion", "file": "lion.svg", "tags": ["animals", "wild"] }`
+   (ids must be unique). Tags are optional; each one becomes a filter button in the
+   library. Reuse existing tags where they fit so the list stays short.
 3. Rebuild and reinstall.
 
 Picture rules, so it shows clearly through paper:

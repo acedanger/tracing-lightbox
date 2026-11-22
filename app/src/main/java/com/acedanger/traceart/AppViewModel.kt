@@ -39,6 +39,7 @@ import kotlin.random.Random
 
 private const val KEY_LOCKED = "locked"
 private const val KEY_PICTURE = "picture_id"
+private const val KEY_TAG = "library_tag"
 private const val SAVE_DEBOUNCE_MS = 300L
 private const val INFO_RASTER_PX = 256
 
@@ -67,6 +68,13 @@ class AppViewModel(app: Application, private val saved: SavedStateHandle) : Andr
 
     /** Survives configuration changes and process death, so a recreated Activity stays locked. */
     val locked: StateFlow<Boolean> = saved.getStateFlow(KEY_LOCKED, false)
+
+    /** The library's tag filter; null shows every picture. Kept while tracing and across rotation. */
+    val selectedTag: StateFlow<String?> = saved.getStateFlow(KEY_TAG, null)
+
+    fun selectTag(tag: String?) {
+        saved[KEY_TAG] = tag
+    }
 
     private val _showKioskNote = MutableStateFlow(false)
     val showKioskNote: StateFlow<Boolean> = _showKioskNote.asStateFlow()

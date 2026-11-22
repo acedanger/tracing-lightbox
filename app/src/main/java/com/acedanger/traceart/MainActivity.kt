@@ -168,10 +168,16 @@ private fun App(
 
     val decorations by vm.decorations.collectAsStateWithLifecycle()
     val info by vm.pictureInfo.collectAsStateWithLifecycle()
+    val selectedTag by vm.selectedTag.collectAsStateWithLifecycle()
 
     val current = picture
     if (current == null) {
-        LibraryScreen(vm.pictures, onOpen = vm::openPicture)
+        LibraryScreen(
+            pictures = vm.pictures,
+            onOpen = vm::openPicture,
+            selectedTag = selectedTag,
+            onSelectTag = vm::selectTag,
+        )
     } else {
         TraceScreen(
             picture = current,
