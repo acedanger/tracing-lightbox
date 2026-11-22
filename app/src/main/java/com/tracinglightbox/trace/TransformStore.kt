@@ -12,6 +12,7 @@ private val Context.dataStore by preferencesDataStore(name = "tracing")
 private val LAST_PICTURE = stringPreferencesKey("last_picture")
 private val KIOSK_NOTE_DISMISSED = booleanPreferencesKey("kiosk_note_dismissed")
 private fun transformKey(pictureId: String) = stringPreferencesKey("t_$pictureId")
+private fun decorationsKey(pictureId: String) = stringPreferencesKey("d_$pictureId")
 
 /** Remembers each picture's position and the last picture used. */
 class TransformStore(context: Context) {
@@ -22,6 +23,13 @@ class TransformStore(context: Context) {
 
     suspend fun save(pictureId: String, t: PictureTransform) {
         store.edit { it[transformKey(pictureId)] = t.encode() }
+    }
+
+    suspend fun loadDecorations(pictureId: String): List<Decoration> =
+        decodeDecorations(store.data.first()[decorationsKey(pictureId)])
+
+    suspend fun saveDecorations(pictureId: String, list: List<Decoration>) {
+        store.edit { it[decorationsKey(pictureId)] = encodeDecorations(list) }
     }
 
     suspend fun lastPictureId(): String? = store.data.first()[LAST_PICTURE]

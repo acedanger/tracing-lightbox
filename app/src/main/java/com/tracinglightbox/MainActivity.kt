@@ -166,6 +166,9 @@ private fun App(
     val unlockState by unlockStateFlow.collectAsStateWithLifecycle()
     val confirmBox by confirmBoxFlow.collectAsStateWithLifecycle()
 
+    val decorations by vm.decorations.collectAsStateWithLifecycle()
+    val info by vm.pictureInfo.collectAsStateWithLifecycle()
+
     val current = picture
     if (current == null) {
         LibraryScreen(vm.pictures, onOpen = vm::openPicture)
@@ -179,6 +182,11 @@ private fun App(
             onFit = vm::fit,
             onMirror = vm::toggleMirror,
             onLock = { vm.setLocked(true) },
+            decorations = decorations,
+            aspect = info?.aspect ?: 1f,
+            decorationsReady = info != null,
+            onAddDecoration = vm::addDecoration,
+            onClearDecorations = vm::clearDecorations,
             showKioskNote = kioskNote && !isKiosk,
             onDismissKioskNote = vm::dismissKioskNote,
             overlay = { if (locked) UnlockOverlay(unlockState, confirmBox) },

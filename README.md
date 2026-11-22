@@ -32,6 +32,10 @@ ones, plus a tiger. Thick, clear lines, made to be traced with a pencil.
 🖐️ **Fit it to your paper.** Drag to move, pinch to zoom, twist with two fingers to
 turn. **Mirror** flips the picture so your dragon can fly the other way.
 
+💖 **Add little extras.** Tap the heart, star, rainbow or cloud buttons to sprinkle
+up to 5 extras around the picture. They never cover the picture and move along with
+it. **Clear** takes them away.
+
 🔒 **Lock means locked.** Once it's locked, touching the screen does nothing. No
 buttons, no accidental swipes. Just you, your pencil and the picture.
 
@@ -60,7 +64,8 @@ doesn't even ask for permissions.
 1. **Pick a picture** from the library.
 2. **Lay your paper on the screen.** Drag, pinch and twist the picture until it sits
    where you want it on the paper. **Fit** puts it back in the middle;
-   **Mirror** flips it.
+   **Mirror** flips it. Want hearts or stars around it? Tap the heart, star, rainbow
+   or cloud buttons, one per tap, up to 5. **Clear** removes them.
 3. **Press Lock.** The buttons disappear and the screen goes extra bright.
 4. **Trace!** Hold the paper still with your other hand. Nothing on the screen will
    move, even if you lean on it.
