@@ -79,6 +79,11 @@ doesn't even ask for permissions.
 - Press gently with your pencil. The screen is under the paper!
 - Tape the corners of the paper down if it keeps sliding.
 
+## What's new in 1.2
+
+- Add little extras around the picture: hearts, stars, rainbows and clouds. One per
+  tap, up to 5. They never cover the picture and move along with it.
+
 ## What's new in 1.1
 
 - 21 new pictures: cats, dragons and unicorns, including anime-style ones.
@@ -88,7 +93,7 @@ doesn't even ask for permissions.
 
 | | |
 |---|---|
-| **Version** | 1.1 |
+| **Version** | 1.2 |
 | **Works on** | Android 9 or newer. Made for tablets (built on a Samsung Galaxy Tab S6 Lite). |
 | **Permissions** | None |
 | **Data collected** | None. Works completely offline. |
