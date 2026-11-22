@@ -5,17 +5,17 @@ plugins {
 }
 
 android {
-    namespace = "com.tracinglightbox"
+    namespace = "com.acedanger.traceart"
     compileSdk {
         version = release(37) { minorApiLevel = 1 }
     }
 
     defaultConfig {
-        applicationId = "com.tracinglightbox"
+        applicationId = "com.acedanger.traceart"
         minSdk = 28
         targetSdk = 36
-        versionCode = 4
-        versionName = "1.3"
+        versionCode = 5
+        versionName = "1.4"
     }
 
     buildTypes {

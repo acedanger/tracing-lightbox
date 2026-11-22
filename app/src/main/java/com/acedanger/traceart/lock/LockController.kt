@@ -1,4 +1,4 @@
-package com.tracinglightbox.lock
+package com.acedanger.traceart.lock
 
 import android.app.ActivityManager
 import android.app.admin.DevicePolicyManager
@@ -9,7 +9,7 @@ import androidx.activity.ComponentActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import com.tracinglightbox.admin.KioskAdminReceiver
+import com.acedanger.traceart.admin.KioskAdminReceiver
 
 /** Applies and removes everything "locked" means at the window / OS level. Idempotent. */
 class LockController(private val activity: ComponentActivity) {

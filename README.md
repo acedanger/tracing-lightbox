@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="docs/screenshots/icon.png" width="128" alt="Tracing Lightbox app icon">
+  <img src="docs/screenshots/icon.png" width="128" alt="Trace Art app icon">
 </p>
 
-<h1 align="center">Tracing Lightbox</h1>
+<h1 align="center">Trace Art</h1>
 
 <p align="center">
   <b>Turn your tablet into a glowing tracing table.</b><br>
@@ -21,7 +21,7 @@
 
 ## About this app
 
-**Put paper on your tablet and trace like a pro.** Tracing Lightbox lights up a
+**Put paper on your tablet and trace like a pro.** Trace Art lights up a
 bold black outline on a bright white screen, so it shines right through a sheet of
 paper. Pick a picture, slide it into place, press **Lock**, and trace. Elbows, palms
 and wiggly fingers can't bump the picture out of place.
@@ -80,6 +80,12 @@ doesn't even ask for permissions.
 - Press gently with your pencil. The screen is under the paper!
 - Tape the corners of the paper down if it keeps sliding.
 
+## What's new in 1.4
+
+- The app is now called **Trace Art** (thanks to our chief tester's suggestion).
+- New Android ID `com.acedanger.traceart`. It installs as a new app; see
+  "Moving a tablet from the old app" below.
+
 ## What's new in 1.3
 
 - 24 new pictures: fish, dolphins, whales, plants, food, people, sports and three
@@ -99,7 +105,7 @@ doesn't even ask for permissions.
 
 | | |
 |---|---|
-| **Version** | 1.3 |
+| **Version** | 1.4 |
 | **Works on** | Android 9 or newer. Made for tablets (built on a Samsung Galaxy Tab S6 Lite). |
 | **Permissions** | None |
 | **Data collected** | None. Works completely offline. |
@@ -107,8 +113,8 @@ doesn't even ask for permissions.
 
 ## Get it
 
-Tracing Lightbox isn't on the Play Store. It's a free APK you install directly.
-Download the latest `tracing-lightbox-<version>.apk` from this repo's **Releases**
+Trace Art isn't on the Play Store. It's a free APK you install directly.
+Download the latest `trace-art-<version>.apk` from this repo's **Releases**
 page on the tablet, open it, and allow "Install unknown apps" when Android asks.
 Android may warn that the app is from an unknown developer. That's expected for apps
 from outside the Play Store. Full steps are in [Install from GitHub](#install-from-github-no-computer-needed)
@@ -154,11 +160,11 @@ Each release on the repo's **Releases** page has two APKs:
 
 | File | Install by | Kiosk mode can be undone by |
 |---|---|---|
-| `tracing-lightbox-<version>.apk` | tapping it on the tablet | factory reset only |
-| `tracing-lightbox-<version>-usb.apk` | USB from a PC (`adb install -t`) | one USB command |
+| `trace-art-<version>.apk` | tapping it on the tablet | factory reset only |
+| `trace-art-<version>-usb.apk` | USB from a PC (`adb install -t`) | one USB command |
 
 To tap-install: on the tablet, open the release page in the browser (the repo is private,
-so sign in to GitHub in the browser), download `tracing-lightbox-<version>.apk`, open it,
+so sign in to GitHub in the browser), download `trace-art-<version>.apk`, open it,
 and allow "Install unknown apps" for the browser when asked.
 
 Both APKs are signed with the same key, from the PC they were built on. Keep building
@@ -169,12 +175,34 @@ To publish a new release (from the repo folder, on that PC):
 ```powershell
 $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 .\gradlew.bat assembleRelease assembleDebug
-copy app\build\outputs\apk\release\app-release.apk tracing-lightbox-v1.1.apk
-copy app\build\outputs\apk\debug\app-debug.apk tracing-lightbox-v1.1-usb.apk
-gh release create v1.1 tracing-lightbox-v1.1.apk tracing-lightbox-v1.1-usb.apk --notes "What changed"
+copy app\build\outputs\apk\release\app-release.apk trace-art-v1.5.apk
+copy app\build\outputs\apk\debug\app-debug.apk trace-art-v1.5-usb.apk
+gh release create v1.5 trace-art-v1.5.apk trace-art-v1.5-usb.apk --notes "What changed"
 ```
 
 (Bump `versionCode` and `versionName` in `app/build.gradle.kts` first.)
+
+### Moving a tablet from the old app (v1.3 and earlier)
+
+From v1.4 the app is called **Trace Art** and its Android ID is `com.acedanger.traceart`
+(it used to be `com.tracinglightbox`, named "Tracing Lightbox"). Android treats it as a
+different app, so it installs **next to** the old one instead of replacing it. Saved
+picture positions and extras don't carry over.
+
+1. Install Trace Art (either way above).
+2. If the old app was set up in kiosk mode, take that away first. The old app can't be
+   uninstalled while it's the device owner:
+
+   ```powershell
+   & $adb shell dpm remove-active-admin com.tracinglightbox/.admin.KioskAdminReceiver
+   ```
+
+   This works for the old USB (test-only) install. If the old app was the tap-to-install
+   version, only a factory reset removes its kiosk mode.
+3. Uninstall the old app: Settings → Apps → **Tracing Lightbox** → Uninstall, or
+   `& $adb uninstall com.tracinglightbox`.
+4. To use kiosk mode again, follow "Set up a tablet (kiosk mode)" below with the new
+   name. The tablet needs to have no accounts on it again for that step.
 
 ## Install on a tablet over USB
 
@@ -216,7 +244,7 @@ kiosk mode yet. Report it so the threshold can be adjusted.
 3. Make the app the device owner:
 
 ```powershell
-& $adb shell dpm set-device-owner com.tracinglightbox/.admin.KioskAdminReceiver
+& $adb shell dpm set-device-owner com.acedanger.traceart/.admin.KioskAdminReceiver
 ```
 
    It should print `Success: Device owner set to package ...`.
@@ -225,7 +253,7 @@ kiosk mode yet. Report it so the threshold can be adjusted.
 ### Undo kiosk mode
 
 ```powershell
-& $adb shell dpm remove-active-admin com.tracinglightbox/.admin.KioskAdminReceiver
+& $adb shell dpm remove-active-admin com.acedanger.traceart/.admin.KioskAdminReceiver
 ```
 
 A factory reset also removes it.
@@ -236,7 +264,7 @@ If the unlock gesture ever stops working in kiosk mode, connect the tablet by US
 
 ```powershell
 & $adb shell am task lock stop
-& $adb shell am force-stop com.tracinglightbox
+& $adb shell am force-stop com.acedanger.traceart
 ```
 
 The first command ends Android's lock; it may print "Activity manager is not in

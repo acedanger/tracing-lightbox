@@ -1,4 +1,4 @@
-package com.tracinglightbox.ui
+package com.acedanger.traceart.ui
 
 import android.widget.Toast
 import androidx.activity.compose.BackHandler
@@ -33,12 +33,12 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import com.tracinglightbox.library.Picture
-import com.tracinglightbox.trace.Decoration
-import com.tracinglightbox.trace.DecorationKind
-import com.tracinglightbox.trace.MAX_DECORATIONS
-import com.tracinglightbox.trace.PictureTransform
-import com.tracinglightbox.lock.Box as PxBox
+import com.acedanger.traceart.library.Picture
+import com.acedanger.traceart.trace.Decoration
+import com.acedanger.traceart.trace.DecorationKind
+import com.acedanger.traceart.trace.MAX_DECORATIONS
+import com.acedanger.traceart.trace.PictureTransform
+import com.acedanger.traceart.lock.Box as PxBox
 
 /** Width below which the decoration buttons sit above the Lock button instead of beside it. */
 private val WideLayout = 720.dp

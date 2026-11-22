@@ -1,4 +1,4 @@
-package com.tracinglightbox
+package com.acedanger.traceart
 
 import android.os.Bundle
 import android.os.Handler
@@ -21,16 +21,16 @@ import androidx.lifecycle.repeatOnLifecycle
 import coil3.ImageLoader
 import coil3.compose.setSingletonImageLoaderFactory
 import coil3.svg.SvgDecoder
-import com.tracinglightbox.lock.Box
-import com.tracinglightbox.lock.LockController
-import com.tracinglightbox.lock.PointerAction
-import com.tracinglightbox.lock.PointerSample
-import com.tracinglightbox.lock.UnlockConfig
-import com.tracinglightbox.lock.UnlockGestureDetector
-import com.tracinglightbox.lock.UnlockState
-import com.tracinglightbox.ui.LibraryScreen
-import com.tracinglightbox.ui.TraceScreen
-import com.tracinglightbox.ui.UnlockOverlay
+import com.acedanger.traceart.lock.Box
+import com.acedanger.traceart.lock.LockController
+import com.acedanger.traceart.lock.PointerAction
+import com.acedanger.traceart.lock.PointerSample
+import com.acedanger.traceart.lock.UnlockConfig
+import com.acedanger.traceart.lock.UnlockGestureDetector
+import com.acedanger.traceart.lock.UnlockState
+import com.acedanger.traceart.ui.LibraryScreen
+import com.acedanger.traceart.ui.TraceScreen
+import com.acedanger.traceart.ui.UnlockOverlay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch

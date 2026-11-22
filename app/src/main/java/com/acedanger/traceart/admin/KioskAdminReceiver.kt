@@ -1,4 +1,4 @@
-package com.tracinglightbox.admin
+package com.acedanger.traceart.admin
 
 import android.app.admin.DeviceAdminReceiver
 

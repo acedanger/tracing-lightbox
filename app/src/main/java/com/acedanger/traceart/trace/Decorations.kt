@@ -1,6 +1,6 @@
-package com.tracinglightbox.trace
+package com.acedanger.traceart.trace
 
-import com.tracinglightbox.lock.Box
+import com.acedanger.traceart.lock.Box
 import kotlin.math.cos
 import kotlin.math.hypot
 import kotlin.math.sin

@@ -1,4 +1,4 @@
-package com.tracinglightbox.ui
+package com.acedanger.traceart.ui
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
@@ -19,8 +19,8 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.tracinglightbox.lock.Box as PxBox
-import com.tracinglightbox.lock.UnlockState
+import com.acedanger.traceart.lock.Box as PxBox
+import com.acedanger.traceart.lock.UnlockState
 
 private val RingSize = 96.dp
 private val RingStroke = 10.dp

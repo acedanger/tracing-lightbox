@@ -1,4 +1,4 @@
-package com.tracinglightbox.ui
+package com.acedanger.traceart.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -18,12 +18,12 @@ import androidx.compose.ui.unit.IntOffset
 import coil3.compose.AsyncImage
 import coil3.request.ImageRequest
 import coil3.size.Size
-import com.tracinglightbox.library.Picture
-import com.tracinglightbox.library.assetUri
-import com.tracinglightbox.trace.Decoration
-import com.tracinglightbox.trace.PictureTransform
-import com.tracinglightbox.trace.fitFrame
-import com.tracinglightbox.trace.offsetPx
+import com.acedanger.traceart.library.Picture
+import com.acedanger.traceart.library.assetUri
+import com.acedanger.traceart.trace.Decoration
+import com.acedanger.traceart.trace.PictureTransform
+import com.acedanger.traceart.trace.fitFrame
+import com.acedanger.traceart.trace.offsetPx
 import kotlin.math.roundToInt
 
 fun Decoration.assetUri(): String = "file:///android_asset/decorations/${kind.file}"
