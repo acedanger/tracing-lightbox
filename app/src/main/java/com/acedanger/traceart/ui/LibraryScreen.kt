@@ -3,6 +3,14 @@ package com.acedanger.traceart.ui
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
@@ -52,16 +60,26 @@ fun LibraryScreen(
     onOpen: (Picture) -> Unit,
     selectedTag: String? = null,
     onSelectTag: (String?) -> Unit = {},
+    version: String = "",
+    updateAvailable: Boolean = false,
+    onAbout: () -> Unit = {},
 ) {
     val tags = remember(pictures) { allTags(pictures) }
     val shown = remember(pictures, selectedTag) { filterByTag(pictures, selectedTag) }
     Column(Modifier.fillMaxSize().background(Color(0xFFFFF3E0)).safeDrawingPadding()) {
-        Text(
-            "Pick a picture",
-            fontSize = 40.sp,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(start = 32.dp, top = 32.dp, bottom = 8.dp),
-        )
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.fillMaxWidth().padding(start = 32.dp, end = 24.dp, top = 32.dp, bottom = 8.dp),
+        ) {
+            Text(
+                "Pick a picture",
+                fontSize = 40.sp,
+                lineHeight = 46.sp,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.weight(1f),
+            )
+            VersionChip(version, updateAvailable, onAbout)
+        }
         if (tags.isNotEmpty()) {
             // One tag at a time; tapping the selected tag again (or "All") shows everything.
             LazyRow(
@@ -112,5 +130,28 @@ fun LibraryScreen(
                 }
             }
         }
+    }
+}
+
+/** "v1.6 ⓘ" in the corner; opens About. An orange ↑ dot means a newer version is on GitHub. */
+@Composable
+private fun VersionChip(version: String, updateAvailable: Boolean, onClick: () -> Unit) {
+    OutlinedButton(
+        onClick = onClick,
+        shape = RoundedCornerShape(28.dp),
+        modifier = Modifier.heightIn(min = 56.dp).semantics {
+            contentDescription = "About, version $version" + if (updateAvailable) ", update available" else ""
+        },
+    ) {
+        Text("v$version", fontSize = 20.sp)
+        if (updateAvailable) {
+            Spacer(Modifier.width(10.dp))
+            androidx.compose.foundation.layout.Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier.size(28.dp).background(UpdateOrange, CircleShape),
+            ) { Text("↑", fontSize = 18.sp, color = Color.White, fontWeight = FontWeight.Bold) }
+        }
+        Spacer(Modifier.width(10.dp))
+        Text("ⓘ", fontSize = 22.sp)
     }
 }

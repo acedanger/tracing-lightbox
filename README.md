@@ -83,6 +83,21 @@ doesn't even ask for permissions.
 - Press gently with your pencil. The screen is under the paper!
 - Tape the corners of the paper down if it keeps sliding.
 
+**Which version is this?** The version is in the top-right corner of the library.
+Tap it for the **About** page: who made the app, a link to this repo, and update
+checking. An orange **↑** next to the version means a newer version is on GitHub;
+the About page has the steps to install it.
+
+## What's new in 1.7
+
+- The installed version shows in the top-right corner of the library.
+- A new **About** page with a link to the GitHub repo and a note that the app was
+  built with Claude Code.
+- The app checks GitHub for a newer version when it opens, at most once a day. If
+  one is out, an orange ↑ appears next to the version, and the About page shows how
+  to update. Automatic checks can be turned off on the About page, and **Check now**
+  checks right away.
+
 ## What's new in 1.6
 
 - 8 new **Detailed** pictures with a more polished look: Tiger Portrait, Elegant Cat,
@@ -120,10 +135,10 @@ doesn't even ask for permissions.
 
 | | |
 |---|---|
-| **Version** | 1.6 |
+| **Version** | 1.7 |
 | **Works on** | Android 9 or newer. Made for tablets (built on a Samsung Galaxy Tab S6 Lite). |
-| **Permissions** | None |
-| **Data collected** | None. Works completely offline. |
+| **Permissions** | Internet, only to ask GitHub whether a newer version is out |
+| **Data collected** | None. Everything works offline; the update check only reads this repo's latest release. |
 | **Ads / purchases** | None |
 
 ## Get it
@@ -180,8 +195,8 @@ Each release on the repo's **Releases** page has two APKs:
 | `trace-art-<version>.apk` | tapping it on the tablet | factory reset only |
 | `trace-art-<version>-usb.apk` | USB from a PC (`adb install -t`) | one USB command |
 
-To tap-install: on the tablet, open the release page in the browser (the repo is private,
-so sign in to GitHub in the browser), download `trace-art-<version>.apk`, open it,
+To tap-install: on the tablet, open the release page in the browser (from 1.7 on, the
+About page's **Open release page** button goes straight there), download `trace-art-<version>.apk`, open it,
 and allow "Install unknown apps" for the browser when asked.
 
 Both APKs are signed with the same key, from the PC they were built on. Keep building
@@ -192,9 +207,9 @@ To publish a new release (from the repo folder, on that PC):
 ```powershell
 $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 .\gradlew.bat assembleRelease assembleDebug
-copy app\build\outputs\apk\release\app-release.apk trace-art-v1.5.apk
-copy app\build\outputs\apk\debug\app-debug.apk trace-art-v1.5-usb.apk
-gh release create v1.5 trace-art-v1.5.apk trace-art-v1.5-usb.apk --notes "What changed"
+copy app\build\outputs\apk\release\app-release.apk trace-art-v1.7.apk
+copy app\build\outputs\apk\debug\app-debug.apk trace-art-v1.7-usb.apk
+gh release create v1.7 trace-art-v1.7.apk trace-art-v1.7-usb.apk --notes "What changed"
 ```
 
 (Bump `versionCode` and `versionName` in `app/build.gradle.kts` first.)
