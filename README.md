@@ -52,7 +52,8 @@ full brightness and pins the app, but Android asks to confirm pinning each time 
 ## Set up a tablet (kiosk mode)
 
 Kiosk mode makes **Lock** a true lock: no confirmation, no Home/Recents/Back, no
-notification shade, no Edge panel. The only way out is the app's own unlock
+notification shade. Samsung's Edge panel and S Pen Air Command should be blocked too
+(confirm on the tablet). The only way out is the app's own unlock
 (hold the top-left corner for 3 seconds, then tap **Unlock**).
 
 Android only allows this on a tablet with **no accounts** on it.
