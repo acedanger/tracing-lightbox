@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- back spikes -->
+    <path d="M 340 470 L 365 415 L 400 452 L 432 400 L 465 443 L 500 398 L 532 440 L 568 402 L 598 445 L 640 412 L 662 462 L 712 445 L 712 500"/>
+    <!-- body -->
+    <ellipse cx="540" cy="610" rx="300" ry="180" fill="#fff"/>
+    <!-- folded wing -->
+    <path d="M 560 540 C 620 470 720 470 760 520 C 715 535 700 570 712 605 C 665 585 625 595 595 620" fill="#fff"/>
+    <!-- tail wrapped in front -->
+    <path d="M 250 665 C 262 835 640 865 800 735"/>
+    <path d="M 312 665 C 330 795 625 805 762 698"/>
+    <path d="M 765 690 L 850 690 L 800 760 Z" fill="#fff"/>
+    <!-- horns -->
+    <path d="M 225 470 Q 190 400 140 380 Q 205 385 260 445"/>
+    <path d="M 400 445 Q 420 375 470 350 Q 440 410 430 465"/>
+    <!-- head -->
+    <circle cx="330" cy="560" r="150" fill="#fff"/>
+    <ellipse cx="300" cy="625" rx="100" ry="62" fill="#fff"/>
+    <ellipse cx="272" cy="612" rx="8" ry="11" fill="#000"/>
+    <ellipse cx="328" cy="612" rx="8" ry="11" fill="#000"/>
+    <path d="M 255 540 Q 283 562 311 540"/>
+    <path d="M 360 540 Q 388 562 416 540"/>
+    <!-- paw -->
+    <ellipse cx="430" cy="720" rx="64" ry="32" fill="#fff"/>
+    <!-- Zzz -->
+    <path d="M 610 300 L 680 300 L 610 370 L 680 370"/>
+    <path d="M 720 200 L 770 200 L 720 250 L 770 250"/>
+  </g>
+</svg>

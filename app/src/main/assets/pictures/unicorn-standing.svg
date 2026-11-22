@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail -->
+    <path d="M 290 530 C 200 495 145 565 180 615 C 125 650 140 730 210 738 C 185 700 210 660 245 655 C 230 700 255 730 300 722 C 285 685 295 640 310 600 Z" fill="#fff"/>
+    <!-- far legs -->
+    <path d="M 320 620 L 320 805 Q 320 825 340 825 L 362 825 Q 382 825 382 805 L 382 620" fill="#fff"/>
+    <path d="M 515 620 L 515 805 Q 515 825 535 825 L 557 825 Q 577 825 577 805 L 577 620" fill="#fff"/>
+    <!-- body -->
+    <ellipse cx="470" cy="580" rx="200" ry="115" fill="#fff"/>
+    <!-- near legs -->
+    <path d="M 390 640 L 390 835 Q 390 855 410 855 L 432 855 Q 452 855 452 835 L 452 640" fill="#fff"/>
+    <path d="M 580 630 L 580 835 Q 580 855 600 855 L 622 855 Q 642 855 642 835 L 642 630" fill="#fff"/>
+    <path d="M 390 805 L 452 805"/>
+    <path d="M 580 805 L 642 805"/>
+    <path d="M 320 780 L 382 780"/>
+    <path d="M 515 780 L 577 780"/>
+    <!-- neck -->
+    <path d="M 545 520 C 575 440 590 410 600 385 L 705 445 C 695 490 680 530 655 585 Z" fill="#fff" stroke="none"/>
+    <path d="M 705 445 C 695 490 680 530 655 585"/>
+    <!-- mane -->
+    <path d="M 640 262 C 575 240 535 282 552 322 C 500 338 495 395 532 415 C 485 438 492 495 538 510 C 520 540 545 575 585 565 L 650 420 Z" fill="#fff" stroke="none"/>
+    <path d="M 640 262 C 575 240 535 282 552 322 C 500 338 495 395 532 415 C 485 438 492 495 538 510 C 520 540 545 575 585 565"/>
+    <!-- ear and horn -->
+    <path d="M 600 290 L 585 195 L 658 258" fill="#fff"/>
+    <path d="M 652 268 L 702 125 L 722 280" fill="#fff"/>
+    <path d="M 663 238 L 712 228"/>
+    <path d="M 675 203 L 708 196"/>
+    <!-- head -->
+    <circle cx="665" cy="370" r="112" fill="#fff"/>
+    <ellipse cx="760" cy="425" rx="78" ry="64" fill="#fff"/>
+    <ellipse cx="790" cy="410" rx="7" ry="11" fill="#000"/>
+    <path d="M 735 455 Q 765 476 800 452"/>
+    <!-- happy closed eye with lashes -->
+    <path d="M 625 360 Q 655 388 685 360"/>
+    <path d="M 633 372 L 622 390"/>
+    <path d="M 655 380 L 654 400"/>
+    <path d="M 677 372 L 688 390"/>
+  </g>
+</svg>

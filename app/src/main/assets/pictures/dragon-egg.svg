@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(0,70)">
+    <!-- horns and frills -->
+    <path d="M 405 245 Q 370 165 320 130 Q 385 150 445 228"/>
+    <path d="M 595 245 Q 630 165 680 130 Q 615 150 555 228"/>
+    <path d="M 318 355 L 225 315 L 258 378 L 215 425 L 320 412"/>
+    <path d="M 682 355 L 775 315 L 742 378 L 785 425 L 680 412"/>
+    <!-- head -->
+    <ellipse cx="500" cy="370" rx="190" ry="160" fill="#fff"/>
+    <path d="M 465 216 L 482 182 L 500 214 L 518 182 L 535 216"/>
+    <circle cx="425" cy="340" r="38"/>
+    <circle cx="575" cy="340" r="38"/>
+    <circle cx="432" cy="346" r="17" fill="#000"/>
+    <circle cx="568" cy="346" r="17" fill="#000"/>
+    <ellipse cx="500" cy="445" rx="110" ry="68" fill="#fff"/>
+    <ellipse cx="468" cy="432" rx="9" ry="13" fill="#000"/>
+    <ellipse cx="532" cy="432" rx="9" ry="13" fill="#000"/>
+    <path d="M 445 474 Q 500 500 555 474"/>
+  </g>
+    <!-- shell hat -->
+    <path d="M 405 285 L 445 255 L 485 287 L 520 253 L 560 285 L 600 257 C 590 195 545 155 500 155 C 450 155 410 205 405 285 Z" fill="#fff"/>
+    <!-- egg -->
+    <path d="M 270 620 L 320 575 L 370 625 L 420 575 L 470 625 L 520 575 L 570 625 L 620 575 L 670 625 L 730 585 C 775 710 715 890 500 890 C 290 890 225 720 270 620 Z" fill="#fff"/>
+    <ellipse cx="400" cy="625" rx="48" ry="34" fill="#fff"/>
+    <ellipse cx="600" cy="625" rx="48" ry="34" fill="#fff"/>
+    <circle cx="380" cy="760" r="34"/>
+    <circle cx="560" cy="800" r="26"/>
+    <circle cx="640" cy="700" r="20"/>
+  </g>
+</svg>

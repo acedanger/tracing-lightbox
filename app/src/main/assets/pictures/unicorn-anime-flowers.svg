@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail -->
+    <path d="M 620 760 C 720 720 790 770 770 830 C 830 850 820 920 750 915 C 765 885 745 860 715 865 C 715 895 690 910 655 900 Z" fill="#fff"/>
+    <!-- small sitting body -->
+    <ellipse cx="500" cy="740" rx="150" ry="110" fill="#fff"/>
+    <path d="M 425 760 L 425 860 Q 425 880 445 880 L 465 880 Q 485 880 485 860 L 485 760" fill="#fff"/>
+    <path d="M 515 760 L 515 860 Q 515 880 535 880 L 555 880 Q 575 880 575 860 L 575 760" fill="#fff"/>
+    <path d="M 425 845 L 485 845"/>
+    <path d="M 515 845 L 575 845"/>
+    <!-- side mane flowing behind the head -->
+    <path d="M 290 255 C 205 290 200 375 245 410 C 205 450 225 520 290 530 L 400 400 Z" fill="#fff"/>
+    <path d="M 710 255 C 795 290 800 375 755 410 C 795 450 775 520 710 530 L 600 400 Z" fill="#fff"/>
+    <!-- ears and horn -->
+    <path d="M 335 225 L 305 110 L 410 170" fill="#fff"/>
+    <path d="M 665 225 L 695 110 L 590 170" fill="#fff"/>
+    <path d="M 462 165 L 500 25 L 538 165" fill="#fff"/>
+    <path d="M 470 130 L 528 118"/>
+    <path d="M 482 85 L 518 78"/>
+    <!-- big head -->
+    <ellipse cx="500" cy="390" rx="250" ry="225" fill="#fff"/>
+    <!-- bangs -->
+    <path d="M 290 300 C 330 215 405 200 440 250 C 455 200 535 190 560 245 C 590 200 665 215 710 300"/>
+    <!-- big anime eyes -->
+    <ellipse cx="395" cy="420" rx="60" ry="78"/>
+    <ellipse cx="605" cy="420" rx="60" ry="78"/>
+    <ellipse cx="395" cy="432" rx="45" ry="60" fill="#000"/>
+    <ellipse cx="605" cy="432" rx="45" ry="60" fill="#000"/>
+    <circle cx="375" cy="405" r="18" fill="#fff" stroke="none"/>
+    <circle cx="585" cy="405" r="18" fill="#fff" stroke="none"/>
+    <circle cx="412" cy="460" r="9" fill="#fff" stroke="none"/>
+    <circle cx="622" cy="460" r="9" fill="#fff" stroke="none"/>
+    <path d="M 340 345 L 320 325 M 660 345 L 680 325"/>
+    <!-- tiny smile and blush -->
+    <path d="M 465 525 Q 500 570 535 525 Z"/>
+    <path d="M 300 520 L 320 500 M 325 525 L 345 505"/>
+    <path d="M 655 500 L 675 520 M 680 505 L 700 525"/>
+    <!-- flower crown -->
+    <circle cx="380" cy="205" r="30" fill="#fff"/><circle cx="380" cy="205" r="9" fill="#000"/>
+    <circle cx="620" cy="205" r="30" fill="#fff"/><circle cx="620" cy="205" r="9" fill="#000"/>
+    <circle cx="300" cy="260" r="26" fill="#fff"/><circle cx="700" cy="260" r="26" fill="#fff"/>
+    <!-- sparkles -->
+    <path d="M 150 140 L 162 175 L 198 180 L 168 200 L 178 235 L 150 215 L 122 235 L 132 200 L 102 180 L 138 175 Z"/>
+    <path d="M 860 600 L 870 628 L 900 632 L 876 648 L 884 676 L 860 660 L 836 676 L 844 648 L 820 632 L 850 628 Z"/>
+    <path d="M 160 760 L 168 782 L 192 785 L 173 797 L 180 820 L 160 806 L 140 820 L 147 797 L 128 785 L 152 782 Z"/>
+  </g>
+</svg>

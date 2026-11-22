@@ -1,5 +1,29 @@
 {
   "pictures": [
-    { "id": "tiger", "name": "Tiger", "file": "tiger.svg" }
+    { "id": "tiger", "name": "Tiger", "file": "tiger.svg" },
+
+    { "id": "cat-sitting", "name": "Sitting Cat", "file": "cat-sitting.svg" },
+    { "id": "cat-sleeping", "name": "Sleepy Cat", "file": "cat-sleeping.svg" },
+    { "id": "cat-yarn", "name": "Cat and Yarn", "file": "cat-yarn.svg" },
+    { "id": "cat-face", "name": "Cat with a Bow", "file": "cat-face.svg" },
+    { "id": "cat-box", "name": "Cat in a Box", "file": "cat-box.svg" },
+    { "id": "cat-anime-sitting", "name": "Anime Cat", "file": "cat-anime-sitting.svg" },
+    { "id": "cat-anime-waving", "name": "Anime Cat Waving", "file": "cat-anime-waving.svg" },
+
+    { "id": "dragon-sitting", "name": "Baby Dragon", "file": "dragon-sitting.svg" },
+    { "id": "dragon-flying", "name": "Flying Dragon", "file": "dragon-flying.svg" },
+    { "id": "dragon-heart", "name": "Dragon with a Heart", "file": "dragon-heart.svg" },
+    { "id": "dragon-egg", "name": "Hatching Dragon", "file": "dragon-egg.svg" },
+    { "id": "dragon-sleeping", "name": "Sleepy Dragon", "file": "dragon-sleeping.svg" },
+    { "id": "dragon-anime-sitting", "name": "Anime Dragon", "file": "dragon-anime-sitting.svg" },
+    { "id": "dragon-anime-happy", "name": "Happy Anime Dragon", "file": "dragon-anime-happy.svg" },
+
+    { "id": "unicorn-standing", "name": "Unicorn", "file": "unicorn-standing.svg" },
+    { "id": "unicorn-rainbow", "name": "Rainbow Unicorn", "file": "unicorn-rainbow.svg" },
+    { "id": "unicorn-stars", "name": "Starry Unicorn", "file": "unicorn-stars.svg" },
+    { "id": "unicorn-lying", "name": "Resting Unicorn", "file": "unicorn-lying.svg" },
+    { "id": "unicorn-head", "name": "Unicorn Portrait", "file": "unicorn-head.svg" },
+    { "id": "unicorn-anime-sitting", "name": "Anime Unicorn", "file": "unicorn-anime-sitting.svg" },
+    { "id": "unicorn-anime-flowers", "name": "Anime Unicorn with Flowers", "file": "unicorn-anime-flowers.svg" }
   ]
 }

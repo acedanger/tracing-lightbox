@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(-150,0)">
+    <path d="M 640 845 C 810 855 850 700 795 605 A 30 30 0 0 0 740 628 C 782 705 765 795 642 795"/>
+    <path d="M 410 520 C 325 610 315 760 348 850 L 652 850 C 685 760 675 610 590 520" fill="#fff"/>
+    <path d="M 455 660 L 450 825"/>
+    <path d="M 545 660 L 550 825"/>
+    <ellipse cx="435" cy="855" rx="60" ry="34" fill="#fff"/>
+    <ellipse cx="565" cy="855" rx="60" ry="34" fill="#fff"/>
+    <path d="M 345 300 L 335 150 L 455 215"/>
+    <path d="M 655 300 L 665 150 L 545 215"/>
+    <path d="M 368 255 L 362 190 L 418 222"/>
+    <path d="M 632 255 L 638 190 L 582 222"/>
+    <ellipse cx="500" cy="370" rx="200" ry="170" fill="#fff"/>
+    <ellipse cx="425" cy="355" rx="34" ry="42"/>
+    <ellipse cx="575" cy="355" rx="34" ry="42"/>
+    <ellipse cx="425" cy="358" rx="10" ry="30" fill="#000"/>
+    <ellipse cx="575" cy="358" rx="10" ry="30" fill="#000"/>
+    <path d="M 480 420 L 520 420 L 500 442 Z"/>
+    <path d="M 500 442 L 500 462"/>
+    <path d="M 458 466 Q 480 492 500 462 Q 520 492 542 466"/>
+    <path d="M 410 425 L 300 405"/>
+    <path d="M 410 445 L 298 452"/>
+    <path d="M 590 425 L 700 405"/>
+    <path d="M 590 445 L 702 452"/>
+  </g>
+    <path d="M 470 860 C 520 900 600 900 650 860"/>
+    <circle cx="760" cy="790" r="115" fill="#fff"/>
+    <path d="M 665 740 Q 760 700 860 760"/>
+    <path d="M 650 800 Q 760 760 872 820"/>
+    <path d="M 690 870 Q 770 830 840 880"/>
+    <path d="M 720 680 Q 680 780 730 900"/>
+  </g>
+</svg>

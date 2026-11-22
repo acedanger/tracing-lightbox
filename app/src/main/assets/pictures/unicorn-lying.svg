@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tail curled on the ground -->
+    <path d="M 270 640 C 170 620 120 700 160 750 C 110 790 150 850 220 840 C 205 805 230 780 265 785 C 260 815 290 830 320 815 Z" fill="#fff"/>
+    <!-- body lying down -->
+    <ellipse cx="480" cy="660" rx="230" ry="120" fill="#fff"/>
+    <ellipse cx="380" cy="780" rx="85" ry="32" fill="#fff"/>
+    <ellipse cx="600" cy="785" rx="85" ry="32" fill="#fff"/>
+    <path d="M 320 770 L 320 795 M 660 772 L 660 798"/>
+  <g transform="translate(25,90)">
+    <!-- neck -->
+    <path d="M 545 520 C 575 440 590 410 600 385 L 705 445 C 695 490 680 530 655 585 Z" fill="#fff" stroke="none"/>
+    <path d="M 705 445 C 695 490 680 530 655 585"/>
+    <!-- mane -->
+    <path d="M 640 262 C 575 240 535 282 552 322 C 500 338 495 395 532 415 C 485 438 492 495 538 510 C 520 540 545 575 585 565 L 650 420 Z" fill="#fff" stroke="none"/>
+    <path d="M 640 262 C 575 240 535 282 552 322 C 500 338 495 395 532 415 C 485 438 492 495 538 510 C 520 540 545 575 585 565"/>
+    <!-- ear and horn -->
+    <path d="M 600 290 L 585 195 L 658 258" fill="#fff"/>
+    <path d="M 652 268 L 702 125 L 722 280" fill="#fff"/>
+    <path d="M 663 238 L 712 228"/>
+    <path d="M 675 203 L 708 196"/>
+    <!-- head -->
+    <circle cx="665" cy="370" r="112" fill="#fff"/>
+    <ellipse cx="760" cy="425" rx="78" ry="64" fill="#fff"/>
+    <ellipse cx="790" cy="410" rx="7" ry="11" fill="#000"/>
+    <path d="M 735 455 Q 765 476 800 452"/>
+    <!-- happy closed eye with lashes -->
+    <path d="M 625 360 Q 655 388 685 360"/>
+    <path d="M 633 372 L 622 390"/>
+    <path d="M 655 380 L 654 400"/>
+    <path d="M 677 372 L 688 390"/>
+  </g>
+    <!-- flowers in the grass -->
+    <circle cx="820" cy="850" r="18"/>
+    <circle cx="820" cy="815" r="18"/><circle cx="853" cy="840" r="18"/><circle cx="840" cy="878" r="18"/><circle cx="800" cy="878" r="18"/><circle cx="787" cy="840" r="18"/>
+    <path d="M 100 880 L 900 880"/>
+  </g>
+</svg>

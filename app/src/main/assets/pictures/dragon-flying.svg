@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- far wing -->
+    <path d="M 380 490 C 320 380 325 300 380 235 C 392 300 425 345 460 365" fill="#fff"/>
+    <!-- tail -->
+    <path d="M 315 535 C 225 525 165 565 110 625"/>
+    <path d="M 322 595 C 240 595 185 625 135 668"/>
+    <path d="M 128 640 L 52 700 L 80 605 Z" fill="#fff"/>
+    <!-- legs and neck -->
+    <ellipse cx="415" cy="660" rx="32" ry="50" fill="#fff"/>
+    <ellipse cx="555" cy="660" rx="32" ry="50" fill="#fff"/>
+    <path d="M 560 500 C 600 440 625 410 650 400 L 730 470 C 700 520 665 560 625 600 Z" fill="#fff"/>
+    <!-- body -->
+    <ellipse cx="480" cy="565" rx="175" ry="102" fill="#fff"/>
+    <path d="M 380 625 Q 480 668 590 620"/>
+    <path d="M 375 470 L 395 438 L 418 466 L 442 432 L 465 462 L 490 430 L 512 462"/>
+    <!-- horn, head, snout -->
+    <path d="M 655 330 Q 632 265 592 240 Q 648 250 690 315"/>
+    <circle cx="700" cy="405" r="95" fill="#fff"/>
+    <ellipse cx="790" cy="432" rx="72" ry="52" fill="#fff"/>
+    <circle cx="700" cy="385" r="24"/>
+    <circle cx="706" cy="390" r="11" fill="#000"/>
+    <ellipse cx="826" cy="418" rx="8" ry="11" fill="#000"/>
+    <path d="M 760 458 Q 800 474 842 452"/>
+    <!-- near wing -->
+    <path d="M 440 485 C 410 345 460 245 570 205 C 548 265 565 305 610 325 C 568 345 555 385 578 425 C 535 425 505 445 495 478" fill="#fff"/>
+    <!-- clouds -->
+    <path d="M 610 860 a 40 40 0 0 1 70 -30 a 55 55 0 0 1 100 10 a 40 40 0 0 1 20 80 L 620 920 a 35 35 0 0 1 -10 -60 z"/>
+    <path d="M 160 830 a 30 30 0 0 1 52 -22 a 40 40 0 0 1 74 8 a 30 30 0 0 1 14 58 L 168 874 a 26 26 0 0 1 -8 -44 z"/>
+  </g>
+</svg>
