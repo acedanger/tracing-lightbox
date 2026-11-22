@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug builds are testOnly so device owner can be removed again over adb.
+     Install with: adb install -t -r app-debug.apk -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application android:testOnly="true" tools:ignore="HardcodedDebugMode" />
+</manifest>

@@ -11,8 +11,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.Button
+import androidx.compose.material3.Card
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -32,6 +34,8 @@ fun TraceScreen(
     onFit: () -> Unit,
     onMirror: () -> Unit,
     onLock: () -> Unit,
+    showKioskNote: Boolean = false,
+    onDismissKioskNote: () -> Unit = {},
     overlay: @Composable () -> Unit = {},
 ) {
     // While locked, Back does nothing; otherwise it returns to the library.
@@ -67,6 +71,24 @@ fun TraceScreen(
                     .height(80.dp)
                     .widthIn(min = 200.dp),
             ) { Text("Lock", fontSize = 32.sp) }
+
+            if (showKioskNote) {
+                Card(
+                    modifier = Modifier
+                        .align(Alignment.TopStart)
+                        .safeDrawingPadding()
+                        .padding(start = 16.dp, top = 88.dp, end = 16.dp)
+                        .widthIn(max = 420.dp),
+                ) {
+                    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(16.dp)) {
+                        Text(
+                            "Not set up as a kiosk yet — see the README to stop exits from pinning.",
+                            modifier = Modifier.weight(1f),
+                        )
+                        TextButton(onClick = onDismissKioskNote) { Text("OK") }
+                    }
+                }
+            }
         }
 
         overlay()

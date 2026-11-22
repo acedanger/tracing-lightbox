@@ -79,7 +79,7 @@ class MainActivity : ComponentActivity() {
             setSingletonImageLoaderFactory { ctx ->
                 ImageLoader.Builder(ctx).components { add(SvgDecoder.Factory()) }.build()
             }
-            MaterialTheme(colorScheme = lightColorScheme()) { App(vm, unlockState, confirmBox) }
+            MaterialTheme(colorScheme = lightColorScheme()) { App(vm, unlockState, confirmBox, lock.isKiosk) }
         }
     }
 
@@ -155,7 +155,9 @@ private fun App(
     vm: AppViewModel,
     unlockStateFlow: StateFlow<UnlockState>,
     confirmBoxFlow: StateFlow<Box>,
+    isKiosk: Boolean,
 ) {
+    val kioskNote by vm.showKioskNote.collectAsStateWithLifecycle()
     val picture by vm.currentPicture.collectAsStateWithLifecycle()
     val transform by vm.transform.collectAsStateWithLifecycle()
     val locked by vm.locked.collectAsStateWithLifecycle()
@@ -175,6 +177,8 @@ private fun App(
             onFit = vm::fit,
             onMirror = vm::toggleMirror,
             onLock = { vm.setLocked(true) },
+            showKioskNote = kioskNote && !isKiosk,
+            onDismissKioskNote = vm::dismissKioskNote,
             overlay = { if (locked) UnlockOverlay(unlockState, confirmBox) },
         )
     }

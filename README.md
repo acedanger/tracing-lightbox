@@ -29,3 +29,59 @@ Picture rules, so it shows clearly through paper:
 - Nothing tiny: a 6-year-old traces it with a pencil.
 - Only free-to-use (public domain / CC0 / explicit permission) or original art. Many
   coloring-page sites forbid copying their pages, even into a private app.
+
+## Install on a tablet
+
+1. On the tablet: Settings → About tablet → Software information → tap **Build number** 7
+   times to turn on Developer options. Then Settings → Developer options → turn on
+   **USB debugging**.
+2. Connect the tablet by USB and accept the "Allow USB debugging?" prompt.
+3. From the repo folder:
+
+```powershell
+$adb = "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe"
+& $adb install -t -r app\build\outputs\apk\debug\app-debug.apk
+```
+
+(`-t` is required: debug builds are marked test-only so kiosk mode can be undone.)
+
+Without the kiosk setup below, **Lock** still blocks every touch, keeps the screen on at
+full brightness and pins the app, but Android asks to confirm pinning each time and the
+"swipe up and hold" gesture can unpin it.
+
+## Set up a tablet (kiosk mode)
+
+Kiosk mode makes **Lock** a true lock: no confirmation, no Home/Recents/Back, no
+notification shade, no Edge panel. The only way out is the app's own unlock
+(hold the top-left corner for 3 seconds, then tap **Unlock**).
+
+Android only allows this on a tablet with **no accounts** on it.
+
+1. Either factory reset the tablet and skip adding any Google or Samsung account during
+   setup, or remove every account in Settings → Accounts and backup → Manage accounts.
+2. Turn on USB debugging and install the app (see above).
+3. Make the app the device owner:
+
+```powershell
+& $adb shell dpm set-device-owner com.tracinglightbox/.admin.KioskAdminReceiver
+```
+
+   It should print `Success: Device owner set to package ...`.
+4. You can now add accounts back if you want them.
+
+### Undo kiosk mode
+
+```powershell
+& $adb shell dpm remove-active-admin com.tracinglightbox/.admin.KioskAdminReceiver
+```
+
+A factory reset also removes it.
+
+## Using it
+
+1. Pick a picture. Drag to move, pinch to zoom, twist with two fingers to rotate.
+   **Fit** re-centers it, **Mirror** flips it.
+2. Lay the paper on the screen, line it up, then press **Lock**.
+3. Trace. Nothing on the screen reacts.
+4. To unlock: press and hold the top-left corner for 3 seconds (a ring fills up), then
+   tap the big **Unlock** button within 5 seconds.
