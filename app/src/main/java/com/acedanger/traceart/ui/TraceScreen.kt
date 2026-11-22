@@ -16,6 +16,8 @@ import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.ui.graphics.Color
 import androidx.compose.material3.Card
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Text
@@ -53,6 +55,7 @@ fun TraceScreen(
     onBack: () -> Unit,
     onFit: () -> Unit,
     onMirror: () -> Unit,
+    onPhoto: () -> Unit = {},
     onLock: () -> Unit,
     decorations: List<Decoration> = emptyList(),
     aspect: Float = 1f,
@@ -106,6 +109,17 @@ fun TraceScreen(
                 FilledTonalButton(onClick = onFit, modifier = Modifier.height(56.dp)) { Text("Fit", fontSize = 20.sp) }
                 FilledTonalButton(onClick = onMirror, modifier = Modifier.height(56.dp)) { Text("Mirror", fontSize = 20.sp) }
             }
+            // Done tracing? Take a photo of the drawing for My Drawings.
+            Button(
+                onClick = onPhoto,
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF4F8B)),
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .safeDrawingPadding()
+                    .padding(16.dp)
+                    .height(56.dp)
+                    .trackArea("photo"),
+            ) { Text("📷  Photo", fontSize = 20.sp) }
             Button(
                 onClick = onLock,
                 modifier = Modifier

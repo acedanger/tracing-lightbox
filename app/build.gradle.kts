@@ -12,10 +12,10 @@ android {
 
     defaultConfig {
         applicationId = "com.acedanger.traceart"
-        minSdk = 28
+        minSdk = 29
         targetSdk = 36
-        versionCode = 8
-        versionName = "1.7"
+        versionCode = 9
+        versionName = "1.8"
     }
 
     buildTypes {
@@ -56,6 +56,9 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.coil.svg)
     implementation(libs.serialization.json)
+    implementation(libs.camera.camera2)
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.view)
 
     testImplementation(libs.junit)
 }

@@ -3,6 +3,9 @@
 
     <!-- Only used to ask GitHub whether a newer version is out. -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Taking photos of finished drawings. Asked for the first time the camera opens. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
 
     <application
         android:allowBackup="false"
