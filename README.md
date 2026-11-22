@@ -1,10 +1,112 @@
-# Tracing Lightbox
+<p align="center">
+  <img src="docs/screenshots/icon.png" width="128" alt="Tracing Lightbox app icon">
+</p>
 
-A private Android app that turns a tablet into a tracing lightbox. Pick an outline
-picture, fit it to the paper, lock it, lay paper on the screen, and trace. While
-locked, no touch can move the picture.
+<h1 align="center">Tracing Lightbox</h1>
+
+<p align="center">
+  <b>Turn your tablet into a glowing tracing table.</b><br>
+  Art &amp; Design · Rated for Everyone · Free · No ads · No in-app purchases
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/library.png" width="32%" alt="The picture library: tigers, cats and dragons">
+  <img src="docs/screenshots/adjust.png" width="32%" alt="A rainbow unicorn ready to line up under paper">
+  <img src="docs/screenshots/unlock-tap.png" width="32%" alt="Unlocking after tracing">
+</p>
+
+> *"It's perfect."* — our first tester
+
+---
+
+## About this app
+
+**Put paper on your tablet and trace like a pro.** Tracing Lightbox lights up a
+bold black outline on a bright white screen, so it shines right through a sheet of
+paper. Pick a picture, slide it into place, press **Lock**, and trace. Elbows, palms
+and wiggly fingers can't bump the picture out of place.
+
+✏️ **22 pictures to trace.** Cats, dragons and unicorns, including cute anime-style
+ones, plus a tiger. Thick, clear lines, made to be traced with a pencil.
+
+🖐️ **Fit it to your paper.** Drag to move, pinch to zoom, twist with two fingers to
+turn. **Mirror** flips the picture so your dragon can fly the other way.
+
+🔒 **Lock means locked.** Once it's locked, touching the screen does nothing. No
+buttons, no accidental swipes. Just you, your pencil and the picture.
+
+☀️ **Bright and steady.** Locking turns the screen to full brightness and keeps it
+on, so the lines stay clear the whole time you trace.
+
+🧠 **Remembers your spot.** Each picture keeps the size and position you gave it, so
+you can come back tomorrow and finish on the same sheet.
+
+🛡️ **Private by design.** No internet, no accounts, no ads, no tracking. The app
+doesn't even ask for permissions.
+
+## Screenshots
+
+| | |
+|---|---|
+| ![Picture library with tigers, cats and dragons](docs/screenshots/library.png) | ![More pictures: dragons and unicorns](docs/screenshots/library-more.png) |
+| **Pick a picture.** Tap any card to start. | **Dragons and unicorns too.** Scroll for more. |
+| ![Rainbow unicorn with Back, Fit, Mirror and Lock buttons](docs/screenshots/adjust.png) | ![Flying dragon zoomed, turned and mirrored](docs/screenshots/adjust-mirrored.png) |
+| **Line it up.** Move, zoom and turn it to fit your paper. | **Make it yours.** Zoom in, tilt it, or mirror it. |
+| ![Locked screen with the unlock ring filling in the corner](docs/screenshots/unlock-hold.png) | ![Big Unlock button counting down](docs/screenshots/unlock-tap.png) |
+| **Locked.** To finish, hold the top-left corner until the ring fills… | **…then tap Unlock.** It disappears after 5 seconds if you don't. |
+
+## How to use it
+
+1. **Pick a picture** from the library.
+2. **Lay your paper on the screen.** Drag, pinch and twist the picture until it sits
+   where you want it on the paper. **Fit** puts it back in the middle;
+   **Mirror** flips it.
+3. **Press Lock.** The buttons disappear and the screen goes extra bright.
+4. **Trace!** Hold the paper still with your other hand. Nothing on the screen will
+   move, even if you lean on it.
+5. **All done?** Press and hold the **top-left corner** with one fingertip for
+   3 seconds until the ring fills up, then tap the big **Unlock** button.
+
+**Tips for the best tracing**
+
+- Use thin printer paper. Thick drawing paper hides the lines.
+- Trace in a dim room. The darker the room, the brighter the lines look.
+- Press gently with your pencil. The screen is under the paper!
+- Tape the corners of the paper down if it keeps sliding.
+
+## What's new in 1.1
+
+- 21 new pictures: cats, dragons and unicorns, including anime-style ones.
+- A new app icon: a pencil tracing a star.
+
+## App info
+
+| | |
+|---|---|
+| **Version** | 1.1 |
+| **Works on** | Android 9 or newer. Made for tablets (built on a Samsung Galaxy Tab S6 Lite). |
+| **Permissions** | None |
+| **Data collected** | None. Works completely offline. |
+| **Ads / purchases** | None |
+
+## Get it
+
+Tracing Lightbox isn't on the Play Store. It's a free APK you install directly.
+Download the latest `tracing-lightbox-<version>.apk` from this repo's **Releases**
+page on the tablet, open it, and allow "Install unknown apps" when Android asks.
+Android may warn that the app is from an unknown developer. That's expected for apps
+from outside the Play Store. Full steps are in [Install from GitHub](#install-from-github-no-computer-needed)
+below.
+
+You don't need the kiosk setup below to use it. **Lock** already blocks every
+touch. Kiosk mode is an extra for a tablet that's only used for tracing.
+
+---
+
+# For grown-ups: building and setup
 
 Built for a Samsung Galaxy Tab S6 Lite. No internet, no permissions, no accounts.
+Screenshots above are rendered from the real app screens (`docs/screenshots/`).
 
 ## Build
 
@@ -125,12 +227,3 @@ The first command ends Android's lock; it may print "Activity manager is not in
 lockTaskMode" even when it worked. The second closes the app, so it reopens unlocked. If no computer is at hand, force a restart by holding
 **Power + Volume down** for about 10 seconds; the app opens unlocked after a restart
 unless it is reopened and locked again.
-
-## Using it
-
-1. Pick a picture. Drag to move, pinch to zoom, twist with two fingers to rotate.
-   **Fit** re-centers it, **Mirror** flips it.
-2. Lay the paper on the screen, line it up, then press **Lock**.
-3. Trace. Nothing on the screen reacts.
-4. To unlock: press and hold the top-left corner for 3 seconds (a ring fills up), then
-   tap the big **Unlock** button within 5 seconds.
